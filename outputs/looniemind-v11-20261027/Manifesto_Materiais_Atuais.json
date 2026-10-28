@@ -1,0 +1,147 @@
+{
+  "manifesto": {
+    "versao_aplicacao": "1.1.0",
+    "apresentacao": {
+      "arquivo": "LoonieMind_Empresa_e_Sistema_8_Slides.pptx",
+      "slides": 8,
+      "duracao_planejada_segundos": 275
+    },
+    "dados_sinteticos": true,
+    "conteudo": "Materiais; o programa está no repositório GabrielIzi/LoonieMind.",
+    "arquivos": {
+      "Base_Sintetica_LoonieMind.zip": {
+        "bytes": 492300,
+        "sha256": "d12425c56de98bee2d725169ce60c88ec304892b1b690e0e6581eb03c1349cf1"
+      },
+      "LEIA-ME.md": {
+        "bytes": 2043,
+        "sha256": "904035330c4e129c0ba304824647fe18ce9e35b27f924a58b7e3cfd1e94db8b3"
+      },
+      "LoonieMind_Empresa_e_Sistema_8_Slides.pptx": {
+        "bytes": 129811,
+        "sha256": "15f4e3a8a4aef16394bbee63fd5049cde7a8b8e8cafd08ae4a5e533e2a3fef0e"
+      },
+      "Manual_Sistema_e_IA_LoonieMind.pdf": {
+        "bytes": 214992,
+        "sha256": "fd4aa34a70fb55ff40d28ddbd0eec30c415f80beaf817f4ae628691df793a226"
+      },
+      "Modelo_Importacao_LoonieMind.xlsx": {
+        "bytes": 32928,
+        "sha256": "36e68946e2b5182e0a5b1722188dcda2604b00452034470b2586d21e26955ab9"
+      },
+      "Projecao_Demonstracao_LoonieMind.xlsx": {
+        "bytes": 11900,
+        "sha256": "7303851f4997a11efffcb544c0350f54e82028bbe56e7392eebc8899d11c651e"
+      },
+      "Relatorio_Demonstracao_LoonieMind.xlsx": {
+        "bytes": 387415,
+        "sha256": "278f2352f27db7a5429183b37809e9dc1ad2cd34200251720d9bb9a5e7f8129d"
+      },
+      "Roteiro_8_Slides.md": {
+        "bytes": 3565,
+        "sha256": "8200a00e455f5e6dddabf3a749926909eddac8afacdda4a99ce1343d2a515fb3"
+      },
+      "Roteiro_8_Slides.pdf": {
+        "bytes": 80428,
+        "sha256": "be34f23ef08c36d290c92520a1a0e63f05f48fcaed1fc7f654103f697e6f8559"
+      },
+      "datasets/sintetica-v2/classificacao_rotulada.csv": {
+        "bytes": 1699214,
+        "sha256": "b28d202765c9e4a9126cb2a1fb4f077d5472d2ec01ddfe24cce3c5eada12a1c2"
+      },
+      "datasets/sintetica-v2/financeiro/aurora_2023.csv": {
+        "bytes": 51917,
+        "sha256": "73a5f84707ff70865c816f1837b844f5686e3d1473defc976cf86fc5a2824931"
+      },
+      "datasets/sintetica-v2/financeiro/aurora_2024.csv": {
+        "bytes": 298513,
+        "sha256": "07649790445528463f958edb33b00d95177c0ab68812e08fed66ae65b614060f"
+      },
+      "datasets/sintetica-v2/financeiro/aurora_2025.csv": {
+        "bytes": 297860,
+        "sha256": "2f247898beb7dc450a57b8e9186ca5f2da47cc5f480b71bada1259c2b2788c7e"
+      },
+      "datasets/sintetica-v2/financeiro/aurora_2026.csv": {
+        "bytes": 244162,
+        "sha256": "d9ef1291f8720a15d577136e2c34e1829e634916bcb10e7b490fb0e1bfdf3234"
+      },
+      "datasets/sintetica-v2/financeiro/horizonte_2023.csv": {
+        "bytes": 53218,
+        "sha256": "698ad6da4dfe88f8400432ae851d67d8d8f570714782d735284c0879b674caca"
+      },
+      "datasets/sintetica-v2/financeiro/horizonte_2024.csv": {
+        "bytes": 306663,
+        "sha256": "3461fa591ecd99b49b94fe1df97be639621b29a19c83e905d13a0494dd8ddce5"
+      },
+      "datasets/sintetica-v2/financeiro/horizonte_2025.csv": {
+        "bytes": 306084,
+        "sha256": "057da0425bfc1c1d3815b1298603edfe531d0e94bec926b8e406923f6397cd1f"
+      },
+      "datasets/sintetica-v2/financeiro/horizonte_2026.csv": {
+        "bytes": 251200,
+        "sha256": "ff2e91d666c76847571b018de9b3f4891bf464b465e80c601c00e5b79a8c1bf8"
+      },
+      "datasets/sintetica-v2/financeiro/studio_2023.csv": {
+        "bytes": 35235,
+        "sha256": "59de87b3d7f28883b55aac56778f2dba93c0a1691b89c447e544bc949cec6750"
+      },
+      "datasets/sintetica-v2/financeiro/studio_2024.csv": {
+        "bytes": 204901,
+        "sha256": "8ebd4d09b03b6753c1c202e804dddfdcc99e8e51f8586fe0c7fb7507d9e86413"
+      },
+      "datasets/sintetica-v2/financeiro/studio_2025.csv": {
+        "bytes": 204409,
+        "sha256": "2d1773ecd03e4ec65634e3bdeefba25adc09c9649ecfa118d441baa101a83558"
+      },
+      "datasets/sintetica-v2/financeiro/studio_2026.csv": {
+        "bytes": 167497,
+        "sha256": "29ce37fcc7074916adb6fcb4da12caacde4cefb29f7ac874368ca5de17da28fc"
+      },
+      "datasets/sintetica-v2/manifesto.json": {
+        "bytes": 3304,
+        "sha256": "a093c775d8055065c230692a7733395952e2ef38e65114176c1ecbe2b4f6f16a"
+      },
+      "docs/ARQUITETURA.md": {
+        "bytes": 12402,
+        "sha256": "c8e9d86c3d69e698d4c4a8d6d86b67b538ce18e6c5f82683088033f161f48bdc"
+      },
+      "docs/ATUALIZACAO-APRESENTACAO-EMPRESA.md": {
+        "bytes": 5347,
+        "sha256": "4f0245b9d24e60fa18bb8ba0210f429c16490fe29b2a4ba52ceb201ccd47568b"
+      },
+      "docs/DECISOES-E-ESCOPO.md": {
+        "bytes": 8520,
+        "sha256": "29b4c6f6f8fdc02014b50a6be47412b91e7b337cef70223553002a72acdb7290"
+      },
+      "docs/GUIA-DE-USO.md": {
+        "bytes": 8716,
+        "sha256": "799ec67eb091323bf0b3c5395528b18743047eeadd6954a78359fe9dcf25eca4"
+      },
+      "docs/MANUAL-SISTEMA-E-IA.md": {
+        "bytes": 20611,
+        "sha256": "942c0439c5696bdc3b01456a66cfbcb7ce7d357f5d4274abb3613cd4e7b6af44"
+      },
+      "docs/ROTEIRO-APRESENTACAO.md": {
+        "bytes": 3565,
+        "sha256": "8200a00e455f5e6dddabf3a749926909eddac8afacdda4a99ce1343d2a515fb3"
+      },
+      "docs/VALIDACAO.md": {
+        "bytes": 9475,
+        "sha256": "b894a4dbe1a714a485c960af9f06fe2bc64b5b96bc3b34a0e96f5748a5d36073"
+      },
+      "docs/relatorios/apresentacao-8-slides.json": {
+        "bytes": 6060,
+        "sha256": "8746d047a613c9e62330f85d4bda32b6d9f40e8576a5bb6f2bab07db2ef7ecdc"
+      },
+      "docs/relatorios/avaliacao-v1.1.json": {
+        "bytes": 76415,
+        "sha256": "988ac884d11f29fa2496b919b34ff2770ced6f6f2fb2cb192d9014de03f25f0e"
+      }
+    }
+  },
+  "pacote": {
+    "arquivo": "LoonieMind_Materiais_Completos.zip",
+    "bytes": 1780307,
+    "sha256": "a6bda271c396fd21fa6b302dcb9ac0b32939bc42b4d8157b4a19847e1f5187dd"
+  }
+}

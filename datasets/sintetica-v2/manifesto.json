@@ -1,0 +1,104 @@
+{
+  "versao": "sintetica-v2",
+  "sintetico": true,
+  "seed": 2702026,
+  "classificacao": {
+    "registros": 14400,
+    "classes": {
+      "2|Logística": 1200,
+      "2|Pessoal": 1200,
+      "2|Fornecedores": 1200,
+      "2|Outras despesas": 1200,
+      "1|Outras receitas": 1200,
+      "2|Aluguel": 1200,
+      "1|Vendas": 1200,
+      "2|Marketing": 1200,
+      "2|Impostos": 1200,
+      "2|Alimentação": 1200,
+      "2|Utilidades": 1200,
+      "1|Serviços": 1200
+    },
+    "familias": 288
+  },
+  "cenarios": [
+    {
+      "id": "aurora",
+      "nome": "Aurora Comércio",
+      "registros": 4124,
+      "inicio": "2023-10-29",
+      "fim": "2026-10-27",
+      "saldo_inicial_centavos": 3000000
+    },
+    {
+      "id": "horizonte",
+      "nome": "Horizonte Varejo",
+      "registros": 4125,
+      "inicio": "2023-10-29",
+      "fim": "2026-10-27",
+      "saldo_inicial_centavos": 2000000
+    },
+    {
+      "id": "studio",
+      "nome": "Studio Soluções",
+      "registros": 2716,
+      "inicio": "2023-10-30",
+      "fim": "2026-10-27",
+      "saldo_inicial_centavos": 2500000
+    }
+  ],
+  "arquivos": {
+    "classificacao_rotulada.csv": {
+      "bytes": 1699214,
+      "sha256": "b28d202765c9e4a9126cb2a1fb4f077d5472d2ec01ddfe24cce3c5eada12a1c2"
+    },
+    "financeiro/aurora_2023.csv": {
+      "bytes": 51917,
+      "sha256": "73a5f84707ff70865c816f1837b844f5686e3d1473defc976cf86fc5a2824931"
+    },
+    "financeiro/aurora_2024.csv": {
+      "bytes": 298513,
+      "sha256": "07649790445528463f958edb33b00d95177c0ab68812e08fed66ae65b614060f"
+    },
+    "financeiro/aurora_2025.csv": {
+      "bytes": 297860,
+      "sha256": "2f247898beb7dc450a57b8e9186ca5f2da47cc5f480b71bada1259c2b2788c7e"
+    },
+    "financeiro/aurora_2026.csv": {
+      "bytes": 244162,
+      "sha256": "d9ef1291f8720a15d577136e2c34e1829e634916bcb10e7b490fb0e1bfdf3234"
+    },
+    "financeiro/horizonte_2023.csv": {
+      "bytes": 53218,
+      "sha256": "698ad6da4dfe88f8400432ae851d67d8d8f570714782d735284c0879b674caca"
+    },
+    "financeiro/horizonte_2024.csv": {
+      "bytes": 306663,
+      "sha256": "3461fa591ecd99b49b94fe1df97be639621b29a19c83e905d13a0494dd8ddce5"
+    },
+    "financeiro/horizonte_2025.csv": {
+      "bytes": 306084,
+      "sha256": "057da0425bfc1c1d3815b1298603edfe531d0e94bec926b8e406923f6397cd1f"
+    },
+    "financeiro/horizonte_2026.csv": {
+      "bytes": 251200,
+      "sha256": "ff2e91d666c76847571b018de9b3f4891bf464b465e80c601c00e5b79a8c1bf8"
+    },
+    "financeiro/studio_2023.csv": {
+      "bytes": 35235,
+      "sha256": "59de87b3d7f28883b55aac56778f2dba93c0a1691b89c447e544bc949cec6750"
+    },
+    "financeiro/studio_2024.csv": {
+      "bytes": 204901,
+      "sha256": "8ebd4d09b03b6753c1c202e804dddfdcc99e8e51f8586fe0c7fb7507d9e86413"
+    },
+    "financeiro/studio_2025.csv": {
+      "bytes": 204409,
+      "sha256": "2d1773ecd03e4ec65634e3bdeefba25adc09c9649ecfa118d441baa101a83558"
+    },
+    "financeiro/studio_2026.csv": {
+      "bytes": 167497,
+      "sha256": "29ce37fcc7074916adb6fcb4da12caacde4cefb29f7ac874368ca5de17da28fc"
+    }
+  },
+  "uso": "Dados artificiais. Não demonstram desempenho em empresas reais. O grupo de descrição deve permanecer na mesma partição."
+}

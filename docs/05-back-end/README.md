@@ -1,5 +1,7 @@
 # Capítulo 5: Back-end
 
+> Atualização de 27/10/2026: backend completo implementado em `looniemind/`, com FastAPI, SQLite operacional versionado, importação em duas fases, serviços financeiros, modelos e recuperação de backup. As pendências abaixo são da proposta original; o estado atual está em [Arquitetura operacional](../ARQUITETURA.md), [decisões](../DECISOES-E-ESCOPO.md) e [validação](../VALIDACAO.md).
+
 ## 1. Objetivo do capítulo
 
 Documentar a lógica da aplicação: tratamento dos dados, classificação, previsão e armazenamento.

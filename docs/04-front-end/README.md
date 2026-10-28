@@ -1,5 +1,7 @@
 # Capítulo 4: Front-end
 
+> Atualização de 27/10/2026: frontend completo implementado em `web/`, com HTML/CSS/JavaScript e gráficos SVG, servido pela API local. Substitui a proposta Streamlit/Matplotlib descrita abaixo, preservada como histórico. Telas: onboarding, dashboard, importação/prévia, lançamentos, classificação, previsão, exportação e empresas/auditoria. A [decisão e as adaptações visuais](../DECISOES-E-ESCOPO.md) e o [guia](../GUIA-DE-USO.md) descrevem o comportamento atual.
+
 ## 1. Objetivo do capítulo
 
 Documentar a interface da aplicação, que roda de forma local ou como interface web simples.

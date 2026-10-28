@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#222a27">
+  <meta name="description" content="LoonieMind — organize suas finanças e veja seu negócio com mais clareza. Aplicação local e privada.">
+  <title>LoonieMind · Finanças com clareza</title>
+  <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+  <link rel="stylesheet" href="/assets/styles.css">
+  <script type="module" src="/assets/app.js"></script>
+</head>
+<body>
+  <a href="#main-content" id="skip-link" class="skip-link">Ir para o conteúdo</a>
+  <div class="sidebar-backdrop" id="sidebar-backdrop"></div>
+  <aside class="sidebar" id="sidebar" aria-label="Menu principal">
+    <a class="brand" href="#/dashboard" aria-label="LoonieMind, início">Loonie<span>Mind</span><i></i></a>
+    <p class="brand-caption">FINANÇAS COM CLAREZA</p>
+    <div id="workspace" class="workspace"></div>
+    <span class="nav-label">SEU NEGÓCIO</span>
+    <nav id="navigation"></nav>
+    <div class="sidebar-bottom">
+      <a href="#/settings" class="nav-item" id="settings-link"><span data-icon="settings"></span>Minha empresa</a>
+      <button type="button" class="nav-item" data-action="help"><span data-icon="help"></span>Guia rápido<span class="tiny-arrow">↗</span></button>
+      <div class="local-status"><span class="status-dot"></span><div>Seus dados ficam aqui<small>Armazenamento neste computador</small></div><span data-icon="shield"></span></div>
+    </div>
+  </aside>
+  <div class="app-shell">
+    <header class="app-header">
+      <button type="button" class="icon-button mobile-menu" data-action="menu" aria-label="Abrir menu"><span data-icon="menu"></span></button>
+      <form id="global-search" class="global-search" role="search"><span data-icon="search"></span><input name="busca" type="search" maxlength="100" aria-label="Buscar lançamentos" placeholder="Buscar lançamentos..."><kbd>/</kbd></form>
+      <div class="header-right"><span class="local-pill"><span class="status-dot"></span>Local e privado</span><button class="icon-button notification-button" type="button" data-action="notifications" aria-label="Ver alertas"><span data-icon="bell"></span><i id="notification-dot" hidden></i></button><div class="header-divider"></div><div class="header-identity" id="header-identity"></div></div>
+    </header>
+    <main id="main-content" tabindex="-1"><div class="loading-view"><span class="spinner"></span><p>Preparando seu espaço...</p></div></main>
+    <footer class="app-footer"><span>LoonieMind <span class="footer-dot">·</span> Um olhar mais claro para o seu negócio.</span><span>Feito para pequenas empresas <span class="footer-dot">✦</span></span></footer>
+  </div>
+  <div id="notification-panel" class="notification-panel" hidden></div>
+  <dialog id="modal" class="modal"></dialog>
+  <div id="toasts" class="toast-stack" role="status" aria-live="polite"></div>
+</body>
+</html>

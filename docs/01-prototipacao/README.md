@@ -1,5 +1,7 @@
 # Capítulo 1: Prototipação
 
+> A proposta original abaixo foi implementada e ampliada na v1 de 27/10/2026. A [referência enviada pelo responsável](referencia-interface.jpeg) orientou a interface. Consulte o [registro de decisões](../DECISOES-E-ESCOPO.md) e a [validação](../VALIDACAO.md) para as adaptações e telas atuais; os campos em aberto abaixo pertencem ao registro inicial.
+
 ## 1. Objetivo do capítulo
 
 Registrar como a aplicação deve se comportar para o usuário antes da implementação: telas, fluxo de uso e protótipos.

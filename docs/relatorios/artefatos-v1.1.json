@@ -1,0 +1,53 @@
+{
+  "Modelo_Importacao_LoonieMind.xlsx": {
+    "abas": [
+      "Movimentacoes",
+      "Exemplo_sintetico",
+      "Orientacoes"
+    ],
+    "erros_formula": 0,
+    "bytes": 32928,
+    "sha256": "36e68946e2b5182e0a5b1722188dcda2604b00452034470b2586d21e26955ab9"
+  },
+  "Relatorio_Demonstracao_LoonieMind.xlsx": {
+    "abas": [
+      "Resumo",
+      "Mensal",
+      "Categorias",
+      "Centros_de_custo",
+      "Lancamentos"
+    ],
+    "erros_formula": 0,
+    "bytes": 387415,
+    "sha256": "278f2352f27db7a5429183b37809e9dc1ad2cd34200251720d9bb9a5e7f8129d",
+    "lancamentos": 4124,
+    "saldo_centavos": 40119304
+  },
+  "Projecao_Demonstracao_LoonieMind.xlsx": {
+    "abas": [
+      "Resumo",
+      "Previsao",
+      "Metodos"
+    ],
+    "erros_formula": 0,
+    "bytes": 11900,
+    "sha256": "7303851f4997a11efffcb544c0350f54e82028bbe56e7392eebc8899d11c651e",
+    "dias": 30
+  },
+  "Manual_Sistema_e_IA_LoonieMind.pdf": {
+    "paginas": 8,
+    "sha256": "fd4aa34a70fb55ff40d28ddbd0eec30c415f80beaf817f4ae628691df793a226"
+  },
+  "Roteiro_Apresentacao_LoonieMind.pdf": {
+    "paginas": 3,
+    "sha256": "7656162b9b56ff127f85cfe3686bcccf092797846066758284e5441313321bdc"
+  },
+  "LoonieMind_Apresentacao_5min_Final.pptx": {
+    "slides": 6,
+    "notas": 6,
+    "grafico_editavel": true,
+    "tabela_editavel": true,
+    "sha256": "eba48ac288ca934a5a13effdc1b02022fef6749e91d1b078a937f6cb3a23ae27",
+    "aberto_no_PowerPoint": false
+  }
+}

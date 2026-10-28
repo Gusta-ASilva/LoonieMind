@@ -2,12 +2,72 @@
 
 Aplicação de inteligência artificial para organizar movimentações financeiras e prever o fluxo de caixa de pequenas empresas, rodando de forma simples e local.
 
+Apresentação atualizada com o essencial do plano de negócio: [empresa e sistema · 8 slides / 4min35s](outputs/looniemind-apresentacao-8-slides/LoonieMind_Empresa_e_Sistema_8_Slides.pptx). [Registro da seleção e das alterações](docs/ATUALIZACAO-APRESENTACAO-EMPRESA.md).
+
+[Baixar o pacote atualizado de materiais](outputs/looniemind-v11-20261027/LoonieMind_Materiais_Completos.zip): apresentação atual, roteiro correspondente, manual, planilhas e base sintética. Para obter o programa, baixe ou clone este repositório e siga as instruções de instalação abaixo.
+
+## Atualização 1.1 · visualização, dados e apresentação
+
+O dashboard prioriza saldo consolidado, entradas, saídas e resultado do período, com evolução diária e qualidade do histórico. As planilhas têm 13 campos de entrada e relatórios por mês, categoria e centro de custo. Os campos complementares são preservados na importação, edição, exportação e backup.
+
+- [Manual completo do sistema e da IA](docs/MANUAL-SISTEMA-E-IA.md)
+- [Roteiro para apresentação de 4min35s](docs/ROTEIRO-APRESENTACAO.md)
+- [Materiais em PDF, Excel e PowerPoint](outputs/looniemind-v11-20261027/)
+- [Base sintética e manifesto](datasets/sintetica-v2/manifesto.json)
+- [Avaliação efetivamente medida](docs/relatorios/avaliacao-v1.1.json)
+
+Em **Minha empresa → Base ampliada**, carregue três cenários fictícios isolados, preservando os dados existentes. A base v2 contém **14.400 exemplos rotulados** e **10.965 movimentações financeiras**. O classificador da demonstração Aurora foi treinado e obteve **F1 macro 0,6766** em 2.400 exemplos de teste com famílias separadas. Os dados são artificiais e esse resultado não comprova qualidade em empresas reais. Materiais também podem ser baixados em **Exportação**.
+
+Reprodução:
+
+```powershell
+.\.venv\Scripts\python.exe -m scripts.generate_dataset
+.\.venv\Scripts\python.exe -m scripts.train_models --company ID --source synthetic
+```
+
+Para reconstruir o ZIP dos materiais existentes, execute `python -m scripts.package_materials`. O empacotamento confere a apresentação de oito slides e os hashes da base sintética. As apresentações anteriores permanecem no repositório como histórico; o pacote contém somente a apresentação atual.
+
+O banco é migrado para o esquema v2, com uma cópia prévia de bancos v1 em `data/backups/antes-da-versao-2.sqlite3`. Esta entrega inclui 41 testes aprovados; veja o registro atualizado em `docs/VALIDACAO.md`.
+
+## Aplicação local · versão 1.1
+
+Interface completa inspirada na referência de tela fornecida em 27/10/2026, com API Python, SQLite, importação CSV/XLS/XLSX, revisão de categorias, previsões, exportação e backup. A primeira abertura permite criar sua empresa ou explorar a empresa fictícia **Estúdio Aurora**, cujos dados e modelos demonstrativos são identificados na interface.
+
+**Windows:** abra `Iniciar LoonieMind.cmd`. É necessário Python 3.12; na primeira instalação, o script baixa as dependências em um ambiente virtual do projeto. Nas próximas execuções, a aplicação funciona offline. O endereço padrão é **http://127.0.0.1:8765**.
+
+Instalação manual no PowerShell:
+
+```powershell
+python -m venv .venv
+.\.venv\Scripts\python.exe -m pip install -r requirements-lock.txt
+.\.venv\Scripts\python.exe run.py
+```
+
+Em Linux com Python 3.12 instalado, execute `sh iniciar.sh`. A validação local desta entrega foi feita em Windows x64; a verificação em Linux está configurada no CI e ainda precisa ser executada nesse ambiente.
+
+- [Guia de uso e restauração de backup](docs/GUIA-DE-USO.md)
+- [Mudança de escopo, decisões e limites da v1](docs/DECISOES-E-ESCOPO.md)
+- [Arquitetura, regras financeiras e contratos](docs/ARQUITETURA.md)
+- [Validação da entrega](docs/VALIDACAO.md)
+- API local: `/api/docs`; contrato legível por ferramentas: `/api/openapi.json`.
+
+O banco operacional fica em `data/looniemind.sqlite3`, fora do Git. O arquivo `Database/LoonieMind.db` e os diagramas originais foram preservados como referência histórica. Dados reais não devem ser enviados ao repositório. A demonstração usa dados sintéticos e não comprova desempenho em empresas reais.
+
+### Verificação para desenvolvimento
+
+```powershell
+.\.venv\Scripts\python.exe -m pip install -r requirements-dev-lock.txt
+.\.venv\Scripts\python.exe -m pytest -q
+.\.venv\Scripts\python.exe -m ruff check looniemind scripts tests run.py
+node --check web/app.js
+```
+
 | Informação | Detalhe |
 |---|---|
 | Disciplina | Inteligência Artificial, 2º semestre de 2026 |
 | Professor | Edson Ceroni |
 | Nome do grupo | LoonieMind |
-| Status | Em desenvolvimento |
+| Status | v1 local implementada; evolução e validação registradas em docs |
 | Repositório | https://github.com/GabrielIzi/LoonieMind |
 
 ## Identificação
@@ -35,6 +95,8 @@ Aplicação de inteligência artificial para organizar movimentações financeir
 | Capítulo 03: Treinamento do modelo | [docs/03-treinamento-do-modelo](docs/03-treinamento-do-modelo/README.md) |
 | Capítulo 04: Front-end | [docs/04-front-end](docs/04-front-end/README.md) |
 | Capítulo 05: Back-end | [docs/05-back-end](docs/05-back-end/README.md) |
+| Implementação operacional da v1 | [docs/ARQUITETURA.md](docs/ARQUITETURA.md) |
+| Mudança de escopo e decisões | [docs/DECISOES-E-ESCOPO.md](docs/DECISOES-E-ESCOPO.md) |
 
 ## 1. Objetivo do trabalho
 
@@ -58,8 +120,8 @@ A ideia é manter tudo simples e rodando localmente, deixando espaço para integ
 1. O usuário importa uma planilha Excel ou CSV.
 2. O sistema identifica as colunas, padroniza os formatos e valida os dados.
 3. Os lançamentos são guardados no histórico local.
-4. O modelo classifica cada lançamento como receita ou despesa e define a categoria.
-5. O modelo de previsão estima receitas e despesas futuras a partir do histórico.
+4. O modelo sugere tipo e categoria; o usuário confirma ou corrige a classificação.
+5. A previsão compara o LightGBM com uma referência sazonal quando há histórico suficiente.
 6. O dashboard mostra os resultados em gráficos.
 7. O usuário exporta os resultados para Excel ou CSV.
 
@@ -71,31 +133,34 @@ O detalhamento de cada etapa está nos capítulos 03 e 05.
  
 | Software | Versão | Como é usado | Quando é usado |
 |---|---|---|---|
-| Python | (versão) | Linguagem em que toda a aplicação é escrita | No desenvolvimento e sempre que a aplicação roda |
-| SQLite | (versão) | Banco de dados local que guarda empresas, planilhas e lançamentos | Ao gravar os dados importados e ao ler o histórico para classificar, prever e exportar |
+| Python | 3.12; validado com 3.12.1 | Backend e modelos | Desenvolvimento e execução |
+| SQLite | 3.43.1 no Python validado | Histórico local versionado | Persistência e consultas |
+| HTML, CSS e JavaScript | Módulos ES nativos | Interface e gráficos SVG | No navegador, sem etapa de build |
  
 ### Bibliotecas
  
 | Biblioteca | Versão | Como é usada | Quando é usada |
 |---|---|---|---|
-| Pandas | (versão) | Lê os arquivos Excel/CSV, mapeia colunas, padroniza formatos, valida dados, monta as variáveis temporais e gera os arquivos de exportação | Na importação, na normalização, na preparação da previsão e na exportação |
-| Scikit-learn | (versão) | Fornece o TF-IDF, que transforma as descrições dos lançamentos em números | No treinamento e na classificação de cada lançamento |
-| LightGBM | (versão) | Classificador (receita, despesa e categoria) e regressor (previsão de receitas e despesas) | No treinamento dos modelos, na classificação dos dados importados e na geração da previsão |
-| Matplotlib | (versão) | Cria os gráficos do dashboard | Ao mostrar os resultados da classificação e da previsão |
-| Streamlit | (versão) | Interface da aplicação, local ou web | Durante toda a execução: importar, ver resultados e exportar |
+| Pandas | 3.1.0 | Leitura e preparação de dados | Importação e séries temporais |
+| Scikit-learn | 1.9.1 | TF-IDF, classes e avaliação | Treinamento e classificação |
+| LightGBM | 4.7.0 | Classificação e regressão | Treinamento e previsão |
+| FastAPI / Uvicorn | 0.162.0 / 0.54.0 | API e servidor da interface local | Toda a execução |
+| Openpyxl / Xlrd | 3.1.5 / 2.0.2 | Excel atual e legado | Importação e exportação |
+
+Dependências fixadas em `requirements-lock.txt`; ferramentas de teste em `requirements-dev-lock.txt`. A troca de Streamlit/Matplotlib por interface web/SVG está justificada no registro de decisões.
  
 ### Ferramentas de distribuição
  
 | Biblioteca | Versão | Como é usada | Quando é usada |
 |---|---|---|---|
-| Briefcase (BeeWare) | (versão) | Empacota o projeto Python como aplicativo instalável: MSI no Windows, .deb, .rpm, Flatpak e AppImage no Linux, DMG no macOS | Só no final, depois que a aplicação estiver pronta, rodando o empacotamento em cada sistema operacional de destino (a validar com o Streamlit) |
+| Scripts de inicialização | v1 | Ambiente virtual e execução por Python; `.cmd` no Windows e `.sh` no Linux | Instalação e uso local; instaladores nativos ficam para uma evolução |
 
 ## 4. Sistemas operacionais compatíveis
 
 | Sistema | Compatível | Versão testada |
 |---|---|---|
-| Windows | Sim | (a preencher) |
-| Linux | Sim | (a preencher) |
+| Windows | Validado localmente | x64; Python 3.12.1 |
+| Linux | A validar | CI configurada; não executada nesta entrega local |
 | Android | Não | - |
 | iOS | Não | - |
 | Outros (macOS) | Não | - |
@@ -123,7 +188,7 @@ O detalhamento de cada etapa está nos capítulos 03 e 05.
 
 ### Quantidade de regras utilizadas
 
-(a preencher: número de regras e aliases pré-cadastrados na normalização)
+As regras de aliases estão em `looniemind/imports.py`. A classificação inicial sem modelo usa 12 palavras-chave, com origem identificada como regra. A demonstração supervisionada v2 usa 14.400 exemplos sintéticos de 12 classes combinadas de tipo/categoria e 288 famílias de descrições. O exemplo antigo de 576 registros permanece apenas nos metadados da demonstração v1 já existente.
 
 ### Domínio de conhecimento
 
@@ -131,4 +196,4 @@ Finanças de pequenas empresas: lançamentos de receitas e despesas, categorias 
 
 ### Árvore de decisão
 
-Os modelos LightGBM são conjuntos de árvores de decisão. A árvore e as categorias finais serão apresentadas no capítulo 03 (a preencher).
+Os modelos LightGBM são conjuntos de árvores de decisão. Categorias, treinamento, validação e limites estão descritos no [capítulo 03](docs/03-treinamento-do-modelo/README.md) e na arquitetura operacional.

@@ -1,5 +1,7 @@
 # Capítulo 2: Modelagem do banco de dados
 
+> Modelo original preservado como referência histórica. A v1 utiliza um banco operacional separado, com centavos inteiros, origem por importação, revisão, categorias e auditoria. O esquema atual e as diferenças estão em [Arquitetura operacional](../ARQUITETURA.md). O arquivo original vazio e seus diagramas não foram alterados.
+
 ## 1. Objetivo do capítulo
 
 Documentar o modelo de dados usado para armazenar o histórico localmente em SQLite.

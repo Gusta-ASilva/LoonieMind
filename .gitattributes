@@ -1,0 +1,26 @@
+* text=auto
+*.py text eol=lf
+*.js text eol=lf
+*.css text eol=lf
+*.html text eol=lf
+*.sh text eol=lf
+*.yml text eol=lf
+*.toml text eol=lf
+*.cmd text eol=crlf
+
+# Preserve bytes used by the dataset and delivery integrity manifests.
+datasets/** -text
+outputs/** -text
+docs/*.md -text
+docs/relatorios/*.json -text
+
+*.pdf binary
+*.pptx binary
+*.xlsx binary
+*.xls binary
+*.zip binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.db binary
+*.sqlite3 binary

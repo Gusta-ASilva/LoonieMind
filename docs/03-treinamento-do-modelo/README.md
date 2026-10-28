@@ -1,5 +1,7 @@
 # Capítulo 3: Treinamento do modelo
 
+> O texto abaixo registra a proposta inicial. O treinamento foi implementado em `looniemind/models.py`: TF-IDF + LightGBM, avaliação por grupos, revisão humana e previsão com teste cronológico contra uma referência sazonal. A demonstração tem 576 exemplos sintéticos/12 classes e não comprova desempenho real. Consulte [dados, parâmetros e métricas da implementação](../ARQUITETURA.md) e o [guia de uso](../GUIA-DE-USO.md) para os comandos e requisitos atuais.
+
 ## 1. Objetivo do capítulo
 
 Documentar os dois modelos de aprendizado de máquina do projeto: a classificação financeira e a previsão financeira.

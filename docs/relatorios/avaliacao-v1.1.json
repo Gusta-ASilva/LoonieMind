@@ -1,0 +1,2281 @@
+{
+  "gerado_em": "2026-10-28T00:20:02.939867+00:00",
+  "sintetico": true,
+  "empresas": [
+    {
+      "empresa": {
+        "id_empresa": 2,
+        "nome": "Aurora Comércio",
+        "descricao": "Base sintética v2 · aurora",
+        "saldo_inicial_centavos": 3000000,
+        "data_saldo": "2023-10-29",
+        "demo": 1,
+        "revisao": 1,
+        "created_at": "2026-10-27T23:59:01.077986+00:00",
+        "updated_at": "2026-10-27T23:59:01.128188+00:00"
+      },
+      "modelo": {
+        "disponivel": true,
+        "metodo": "TF-IDF (palavras e caracteres) + LightGBM",
+        "fonte": "synthetic",
+        "sintetico": true,
+        "versao": "16d06098da41",
+        "dados_sha256": "594289b2652156ce08062a21953cbd8d7e7e63305c12941c0c457230c98d69ac",
+        "treinado_em": "2026-10-27T23:59:38.836211+00:00",
+        "exemplos": 14400,
+        "bibliotecas": {
+          "scikit-learn": "1.9.1",
+          "lightgbm": "4.7.0",
+          "numpy": "2.5.4",
+          "joblib": "1.6.0"
+        },
+        "classes": 12,
+        "metricas": {
+          "f1_macro": 0.6766,
+          "por_classe": {
+            "1|Outras receitas": {
+              "precision": 0.5763688760806917,
+              "recall": 1.0,
+              "f1-score": 0.7312614259597806,
+              "support": 200.0
+            },
+            "1|Serviços": {
+              "precision": 1.0,
+              "recall": 0.26,
+              "f1-score": 0.4126984126984127,
+              "support": 200.0
+            },
+            "1|Vendas": {
+              "precision": 0.9375,
+              "recall": 0.75,
+              "f1-score": 0.8333333333333334,
+              "support": 200.0
+            },
+            "2|Alimentação": {
+              "precision": 1.0,
+              "recall": 0.5,
+              "f1-score": 0.6666666666666666,
+              "support": 200.0
+            },
+            "2|Aluguel": {
+              "precision": 1.0,
+              "recall": 0.75,
+              "f1-score": 0.8571428571428571,
+              "support": 200.0
+            },
+            "2|Fornecedores": {
+              "precision": 0.5116279069767442,
+              "recall": 0.88,
+              "f1-score": 0.6470588235294118,
+              "support": 200.0
+            },
+            "2|Impostos": {
+              "precision": 0.6666666666666666,
+              "recall": 0.5,
+              "f1-score": 0.5714285714285714,
+              "support": 200.0
+            },
+            "2|Logística": {
+              "precision": 0.6666666666666666,
+              "recall": 0.5,
+              "f1-score": 0.5714285714285714,
+              "support": 200.0
+            },
+            "2|Marketing": {
+              "precision": 1.0,
+              "recall": 0.75,
+              "f1-score": 0.8571428571428571,
+              "support": 200.0
+            },
+            "2|Outras despesas": {
+              "precision": 0.4444444444444444,
+              "recall": 0.5,
+              "f1-score": 0.47058823529411764,
+              "support": 200.0
+            },
+            "2|Pessoal": {
+              "precision": 0.47393364928909953,
+              "recall": 1.0,
+              "f1-score": 0.6430868167202572,
+              "support": 200.0
+            },
+            "2|Utilidades": {
+              "precision": 1.0,
+              "recall": 0.75,
+              "f1-score": 0.8571428571428571,
+              "support": 200.0
+            },
+            "accuracy": 0.6783333333333333,
+            "macro avg": {
+              "precision": 0.773100684177026,
+              "recall": 0.6783333333333333,
+              "f1-score": 0.6765816190406412,
+              "support": 2400.0
+            },
+            "weighted avg": {
+              "precision": 0.773100684177026,
+              "recall": 0.6783333333333333,
+              "f1-score": 0.6765816190406411,
+              "support": 2400.0
+            }
+          },
+          "f1_macro_validacao": 0.6034,
+          "treino": 9600,
+          "validacao": 2400,
+          "teste": 2400,
+          "grupos": {
+            "treino": 192,
+            "validacao": 48,
+            "teste": 48
+          },
+          "separacao": "famílias de descrição disjuntas por classe; consulte as contagens efetivas de cada partição",
+          "seed": 42,
+          "proporcoes": {
+            "treino": 0.6667,
+            "validacao": 0.1667,
+            "teste": 0.1667
+          }
+        },
+        "aviso": "Avaliação em dados sintéticos; não demonstra qualidade em dados reais."
+      },
+      "previsao": {
+        "disponivel": true,
+        "dias": 30,
+        "serie": [
+          {
+            "data": "2026-10-28",
+            "receitas_centavos": 128636,
+            "despesas_centavos": 53050,
+            "saldo_centavos": 40194890
+          },
+          {
+            "data": "2026-10-29",
+            "receitas_centavos": 129972,
+            "despesas_centavos": 30683,
+            "saldo_centavos": 40294179
+          },
+          {
+            "data": "2026-10-30",
+            "receitas_centavos": 134720,
+            "despesas_centavos": 51626,
+            "saldo_centavos": 40377273
+          },
+          {
+            "data": "2026-10-31",
+            "receitas_centavos": 75033,
+            "despesas_centavos": 8998,
+            "saldo_centavos": 40443308
+          },
+          {
+            "data": "2026-11-01",
+            "receitas_centavos": 78415,
+            "despesas_centavos": 1121,
+            "saldo_centavos": 40520602
+          },
+          {
+            "data": "2026-11-02",
+            "receitas_centavos": 149477,
+            "despesas_centavos": 128991,
+            "saldo_centavos": 40541088
+          },
+          {
+            "data": "2026-11-03",
+            "receitas_centavos": 154345,
+            "despesas_centavos": 68262,
+            "saldo_centavos": 40627171
+          },
+          {
+            "data": "2026-11-04",
+            "receitas_centavos": 152520,
+            "despesas_centavos": 253374,
+            "saldo_centavos": 40526317
+          },
+          {
+            "data": "2026-11-05",
+            "receitas_centavos": 152942,
+            "despesas_centavos": 651035,
+            "saldo_centavos": 40028224
+          },
+          {
+            "data": "2026-11-06",
+            "receitas_centavos": 151015,
+            "despesas_centavos": 198526,
+            "saldo_centavos": 39980713
+          },
+          {
+            "data": "2026-11-07",
+            "receitas_centavos": 88973,
+            "despesas_centavos": 3480,
+            "saldo_centavos": 40066206
+          },
+          {
+            "data": "2026-11-08",
+            "receitas_centavos": 90364,
+            "despesas_centavos": 3670,
+            "saldo_centavos": 40152900
+          },
+          {
+            "data": "2026-11-09",
+            "receitas_centavos": 153345,
+            "despesas_centavos": 46607,
+            "saldo_centavos": 40259638
+          },
+          {
+            "data": "2026-11-10",
+            "receitas_centavos": 151878,
+            "despesas_centavos": 29377,
+            "saldo_centavos": 40382139
+          },
+          {
+            "data": "2026-11-11",
+            "receitas_centavos": 159466,
+            "despesas_centavos": 39563,
+            "saldo_centavos": 40502042
+          },
+          {
+            "data": "2026-11-12",
+            "receitas_centavos": 154930,
+            "despesas_centavos": 50736,
+            "saldo_centavos": 40606236
+          },
+          {
+            "data": "2026-11-13",
+            "receitas_centavos": 153127,
+            "despesas_centavos": 90882,
+            "saldo_centavos": 40668481
+          },
+          {
+            "data": "2026-11-14",
+            "receitas_centavos": 89301,
+            "despesas_centavos": 14942,
+            "saldo_centavos": 40742840
+          },
+          {
+            "data": "2026-11-15",
+            "receitas_centavos": 91900,
+            "despesas_centavos": 29991,
+            "saldo_centavos": 40804749
+          },
+          {
+            "data": "2026-11-16",
+            "receitas_centavos": 152303,
+            "despesas_centavos": 36737,
+            "saldo_centavos": 40920315
+          },
+          {
+            "data": "2026-11-17",
+            "receitas_centavos": 154851,
+            "despesas_centavos": 41575,
+            "saldo_centavos": 41033591
+          },
+          {
+            "data": "2026-11-18",
+            "receitas_centavos": 155159,
+            "despesas_centavos": 421243,
+            "saldo_centavos": 40767507
+          },
+          {
+            "data": "2026-11-19",
+            "receitas_centavos": 155159,
+            "despesas_centavos": 19577,
+            "saldo_centavos": 40903089
+          },
+          {
+            "data": "2026-11-20",
+            "receitas_centavos": 158601,
+            "despesas_centavos": 94470,
+            "saldo_centavos": 40967220
+          },
+          {
+            "data": "2026-11-21",
+            "receitas_centavos": 91194,
+            "despesas_centavos": 2337,
+            "saldo_centavos": 41056077
+          },
+          {
+            "data": "2026-11-22",
+            "receitas_centavos": 91368,
+            "despesas_centavos": 2828,
+            "saldo_centavos": 41144617
+          },
+          {
+            "data": "2026-11-23",
+            "receitas_centavos": 156694,
+            "despesas_centavos": 44705,
+            "saldo_centavos": 41256606
+          },
+          {
+            "data": "2026-11-24",
+            "receitas_centavos": 161147,
+            "despesas_centavos": 29544,
+            "saldo_centavos": 41388209
+          },
+          {
+            "data": "2026-11-25",
+            "receitas_centavos": 158063,
+            "despesas_centavos": 44705,
+            "saldo_centavos": 41501567
+          },
+          {
+            "data": "2026-11-26",
+            "receitas_centavos": 158063,
+            "despesas_centavos": 36910,
+            "saldo_centavos": 41622720
+          }
+        ],
+        "metodo": "LightGBM Regressor",
+        "modelos": {
+          "receitas": {
+            "metodo": "LightGBM Regressor",
+            "avaliacao": {
+              "mae_modelo_centavos": 13589,
+              "mae_referencia_centavos": 14559,
+              "dias_teste": 21,
+              "inicio_teste": "2026-10-07",
+              "fim_teste": "2026-10-27",
+              "validacao": "holdout cronológico com previsão recursiva",
+              "wape": 0.1221
+            }
+          },
+          "despesas": {
+            "metodo": "LightGBM Regressor",
+            "avaliacao": {
+              "mae_modelo_centavos": 12668,
+              "mae_referencia_centavos": 207873,
+              "dias_teste": 21,
+              "inicio_teste": "2026-10-07",
+              "fim_teste": "2026-10-27",
+              "validacao": "holdout cronológico com previsão recursiva",
+              "wape": 0.3001
+            }
+          }
+        },
+        "dias_historico": 1095,
+        "ultima_data": "2026-10-27",
+        "origem_previsao": "2026-10-27",
+        "menor_saldo_centavos": 39980713,
+        "saldo_final_centavos": 41622720,
+        "pendentes_sem_tipo": 0,
+        "saldo_atual_centavos": 40119304,
+        "aviso": "Estimativa, não garantia. Dias sem lançamentos no histórico são considerados sem movimentação. Confira se os arquivos cobrem todo o período.",
+        "sintetico": true
+      },
+      "resumo": {
+        "empresa": {
+          "id_empresa": 2,
+          "nome": "Aurora Comércio",
+          "descricao": "Base sintética v2 · aurora",
+          "saldo_inicial_centavos": 3000000,
+          "data_saldo": "2023-10-29",
+          "demo": 1,
+          "revisao": 1,
+          "created_at": "2026-10-27T23:59:01.077986+00:00",
+          "updated_at": "2026-10-27T23:59:01.128188+00:00"
+        },
+        "periodo": {
+          "codigo": "month",
+          "inicio": "2026-10-01",
+          "fim": "2026-10-27"
+        },
+        "saldo_centavos": 40119304,
+        "receitas_centavos": 3012505,
+        "despesas_centavos": 2373794,
+        "resultado_centavos": 638711,
+        "variacao_receitas": -4.7,
+        "variacao_despesas": -0.5,
+        "pendentes": 12,
+        "sem_tipo": 0,
+        "total_lancamentos": 4124,
+        "lancamentos_periodo": 100,
+        "categorias": [
+          {
+            "categoria": "Pessoal",
+            "valor_centavos": 1008000,
+            "percentual": 42.5
+          },
+          {
+            "categoria": "Fornecedores",
+            "valor_centavos": 517958,
+            "percentual": 21.8
+          },
+          {
+            "categoria": "Aluguel",
+            "valor_centavos": 320000,
+            "percentual": 13.5
+          },
+          {
+            "categoria": "Impostos",
+            "valor_centavos": 230704,
+            "percentual": 9.7
+          },
+          {
+            "categoria": "Marketing",
+            "valor_centavos": 103138,
+            "percentual": 4.3
+          },
+          {
+            "categoria": "Utilidades",
+            "valor_centavos": 85575,
+            "percentual": 3.6
+          },
+          {
+            "categoria": "Alimentação",
+            "valor_centavos": 49189,
+            "percentual": 2.1
+          },
+          {
+            "categoria": "Logística",
+            "valor_centavos": 48673,
+            "percentual": 2.1
+          },
+          {
+            "categoria": "Sem categoria",
+            "valor_centavos": 10557,
+            "percentual": 0.4
+          }
+        ],
+        "saldo_abertura_grafico_centavos": 39480593,
+        "qualidade": {
+          "revisados": 4112,
+          "pendentes": 12,
+          "sem_tipo_centavos": 0,
+          "ultima_movimentacao": "2026-10-27"
+        },
+        "fluxo_mensal": [
+          {
+            "mes": "2026-05",
+            "receitas_centavos": 3664401,
+            "despesas_centavos": 2455833
+          },
+          {
+            "mes": "2026-06",
+            "receitas_centavos": 3535615,
+            "despesas_centavos": 2497609
+          },
+          {
+            "mes": "2026-07",
+            "receitas_centavos": 3778470,
+            "despesas_centavos": 2499972
+          },
+          {
+            "mes": "2026-08",
+            "receitas_centavos": 3880893,
+            "despesas_centavos": 2447483
+          },
+          {
+            "mes": "2026-09",
+            "receitas_centavos": 3529676,
+            "despesas_centavos": 2477568
+          },
+          {
+            "mes": "2026-10",
+            "receitas_centavos": 3012505,
+            "despesas_centavos": 2373794
+          }
+        ],
+        "ultimos": [
+          {
+            "id_lancamento": 4902,
+            "id_empresa": 2,
+            "id_planilha": null,
+            "linha_origem": null,
+            "descricao": "Campanha de marketing digital",
+            "categoria": "Marketing",
+            "valor_centavos": 23079,
+            "data": "2026-10-27",
+            "tipo": 2,
+            "revisado": 1,
+            "origem": "demonstracao",
+            "sugestao": null,
+            "created_at": "2026-10-27T23:59:01.095110+00:00",
+            "updated_at": "2026-10-27T23:59:01.095110+00:00",
+            "documento": "DOC-AURORA-004124",
+            "contraparte": "Agência Modelo",
+            "centro_custo": "Comercial",
+            "conta": "Caixa da loja",
+            "forma_pagamento": "PIX",
+            "competencia": "2026-10",
+            "observacoes": "Registro fictício para treinamento e demonstração",
+            "id_externo": "SYN-AURORA-004124"
+          },
+          {
+            "id_lancamento": 4901,
+            "id_empresa": 2,
+            "id_planilha": null,
+            "linha_origem": null,
+            "descricao": "Serviço de manutenção pedido 5378",
+            "categoria": "Serviços",
+            "valor_centavos": 41207,
+            "data": "2026-10-27",
+            "tipo": 1,
+            "revisado": 1,
+            "origem": "demonstracao",
+            "sugestao": null,
+            "created_at": "2026-10-27T23:59:01.095110+00:00",
+            "updated_at": "2026-10-27T23:59:01.095110+00:00",
+            "documento": "DOC-AURORA-004123",
+            "contraparte": "Cliente Modelo 131",
+            "centro_custo": "Atendimento",
+            "conta": "Conta principal",
+            "forma_pagamento": "Transferência",
+            "competencia": "2026-10",
+            "observacoes": "Registro fictício para treinamento e demonstração",
+            "id_externo": "SYN-AURORA-004123"
+          },
+          {
+            "id_lancamento": 4900,
+            "id_empresa": 2,
+            "id_planilha": null,
+            "linha_origem": null,
+            "descricao": "Venda de produtos pedido 5377",
+            "categoria": "Vendas",
+            "valor_centavos": 35128,
+            "data": "2026-10-27",
+            "tipo": 1,
+            "revisado": 1,
+            "origem": "demonstracao",
+            "sugestao": null,
+            "created_at": "2026-10-27T23:59:01.095110+00:00",
+            "updated_at": "2026-10-27T23:59:01.095110+00:00",
+            "documento": "DOC-AURORA-004122",
+            "contraparte": "Cliente Modelo 122",
+            "centro_custo": "Loja",
+            "conta": "Conta principal",
+            "forma_pagamento": "PIX",
+            "competencia": "2026-10",
+            "observacoes": "Registro fictício para treinamento e demonstração",
+            "id_externo": "SYN-AURORA-004122"
+          },
+          {
+            "id_lancamento": 4899,
+            "id_empresa": 2,
+            "id_planilha": null,
+            "linha_origem": null,
+            "descricao": "Venda de produtos pedido 5376",
+            "categoria": "Sem categoria",
+            "valor_centavos": 27154,
+            "data": "2026-10-27",
+            "tipo": 1,
+            "revisado": 0,
+            "origem": "demonstracao",
+            "sugestao": {
+              "tipo": 1,
+              "categoria": "Vendas",
+              "score": 1.0,
+              "metodo": "modelo",
+              "versao": "16d06098da41",
+              "sintetico": true
+            },
+            "created_at": "2026-10-27T23:59:01.095110+00:00",
+            "updated_at": "2026-10-27T23:59:01.095110+00:00",
+            "documento": "DOC-AURORA-004121",
+            "contraparte": "Cliente Modelo 111",
+            "centro_custo": "Loja",
+            "conta": "Conta principal",
+            "forma_pagamento": "Boleto",
+            "competencia": "2026-10",
+            "observacoes": "Registro fictício para treinamento e demonstração",
+            "id_externo": "SYN-AURORA-004121"
+          },
+          {
+            "id_lancamento": 4898,
+            "id_empresa": 2,
+            "id_planilha": null,
+            "linha_origem": null,
+            "descricao": "Pagamento fornecedor de insumos",
+            "categoria": "Fornecedores",
+            "valor_centavos": 57926,
+            "data": "2026-10-26",
+            "tipo": 2,
+            "revisado": 1,
+            "origem": "demonstracao",
+            "sugestao": null,
+            "created_at": "2026-10-27T23:59:01.095110+00:00",
+            "updated_at": "2026-10-27T23:59:01.095110+00:00",
+            "documento": "DOC-AURORA-004120",
+            "contraparte": "Distribuidora Fictícia 05",
+            "centro_custo": "Operação",
+            "conta": "Caixa da loja",
+            "forma_pagamento": "PIX",
+            "competencia": "2026-10",
+            "observacoes": "Registro fictício para treinamento e demonstração",
+            "id_externo": "SYN-AURORA-004120"
+          }
+        ],
+        "previsao": {
+          "disponivel": true,
+          "dias": 30,
+          "serie": [
+            {
+              "data": "2026-10-28",
+              "receitas_centavos": 128636,
+              "despesas_centavos": 53050,
+              "saldo_centavos": 40194890
+            },
+            {
+              "data": "2026-10-29",
+              "receitas_centavos": 129972,
+              "despesas_centavos": 30683,
+              "saldo_centavos": 40294179
+            },
+            {
+              "data": "2026-10-30",
+              "receitas_centavos": 134720,
+              "despesas_centavos": 51626,
+              "saldo_centavos": 40377273
+            },
+            {
+              "data": "2026-10-31",
+              "receitas_centavos": 75033,
+              "despesas_centavos": 8998,
+              "saldo_centavos": 40443308
+            },
+            {
+              "data": "2026-11-01",
+              "receitas_centavos": 78415,
+              "despesas_centavos": 1121,
+              "saldo_centavos": 40520602
+            },
+            {
+              "data": "2026-11-02",
+              "receitas_centavos": 149477,
+              "despesas_centavos": 128991,
+              "saldo_centavos": 40541088
+            },
+            {
+              "data": "2026-11-03",
+              "receitas_centavos": 154345,
+              "despesas_centavos": 68262,
+              "saldo_centavos": 40627171
+            },
+            {
+              "data": "2026-11-04",
+              "receitas_centavos": 152520,
+              "despesas_centavos": 253374,
+              "saldo_centavos": 40526317
+            },
+            {
+              "data": "2026-11-05",
+              "receitas_centavos": 152942,
+              "despesas_centavos": 651035,
+              "saldo_centavos": 40028224
+            },
+            {
+              "data": "2026-11-06",
+              "receitas_centavos": 151015,
+              "despesas_centavos": 198526,
+              "saldo_centavos": 39980713
+            },
+            {
+              "data": "2026-11-07",
+              "receitas_centavos": 88973,
+              "despesas_centavos": 3480,
+              "saldo_centavos": 40066206
+            },
+            {
+              "data": "2026-11-08",
+              "receitas_centavos": 90364,
+              "despesas_centavos": 3670,
+              "saldo_centavos": 40152900
+            },
+            {
+              "data": "2026-11-09",
+              "receitas_centavos": 153345,
+              "despesas_centavos": 46607,
+              "saldo_centavos": 40259638
+            },
+            {
+              "data": "2026-11-10",
+              "receitas_centavos": 151878,
+              "despesas_centavos": 29377,
+              "saldo_centavos": 40382139
+            },
+            {
+              "data": "2026-11-11",
+              "receitas_centavos": 159466,
+              "despesas_centavos": 39563,
+              "saldo_centavos": 40502042
+            },
+            {
+              "data": "2026-11-12",
+              "receitas_centavos": 154930,
+              "despesas_centavos": 50736,
+              "saldo_centavos": 40606236
+            },
+            {
+              "data": "2026-11-13",
+              "receitas_centavos": 153127,
+              "despesas_centavos": 90882,
+              "saldo_centavos": 40668481
+            },
+            {
+              "data": "2026-11-14",
+              "receitas_centavos": 89301,
+              "despesas_centavos": 14942,
+              "saldo_centavos": 40742840
+            },
+            {
+              "data": "2026-11-15",
+              "receitas_centavos": 91900,
+              "despesas_centavos": 29991,
+              "saldo_centavos": 40804749
+            },
+            {
+              "data": "2026-11-16",
+              "receitas_centavos": 152303,
+              "despesas_centavos": 36737,
+              "saldo_centavos": 40920315
+            },
+            {
+              "data": "2026-11-17",
+              "receitas_centavos": 154851,
+              "despesas_centavos": 41575,
+              "saldo_centavos": 41033591
+            },
+            {
+              "data": "2026-11-18",
+              "receitas_centavos": 155159,
+              "despesas_centavos": 421243,
+              "saldo_centavos": 40767507
+            },
+            {
+              "data": "2026-11-19",
+              "receitas_centavos": 155159,
+              "despesas_centavos": 19577,
+              "saldo_centavos": 40903089
+            },
+            {
+              "data": "2026-11-20",
+              "receitas_centavos": 158601,
+              "despesas_centavos": 94470,
+              "saldo_centavos": 40967220
+            },
+            {
+              "data": "2026-11-21",
+              "receitas_centavos": 91194,
+              "despesas_centavos": 2337,
+              "saldo_centavos": 41056077
+            },
+            {
+              "data": "2026-11-22",
+              "receitas_centavos": 91368,
+              "despesas_centavos": 2828,
+              "saldo_centavos": 41144617
+            },
+            {
+              "data": "2026-11-23",
+              "receitas_centavos": 156694,
+              "despesas_centavos": 44705,
+              "saldo_centavos": 41256606
+            },
+            {
+              "data": "2026-11-24",
+              "receitas_centavos": 161147,
+              "despesas_centavos": 29544,
+              "saldo_centavos": 41388209
+            },
+            {
+              "data": "2026-11-25",
+              "receitas_centavos": 158063,
+              "despesas_centavos": 44705,
+              "saldo_centavos": 41501567
+            },
+            {
+              "data": "2026-11-26",
+              "receitas_centavos": 158063,
+              "despesas_centavos": 36910,
+              "saldo_centavos": 41622720
+            }
+          ],
+          "metodo": "LightGBM Regressor",
+          "modelos": {
+            "receitas": {
+              "metodo": "LightGBM Regressor",
+              "avaliacao": {
+                "mae_modelo_centavos": 13589,
+                "mae_referencia_centavos": 14559,
+                "dias_teste": 21,
+                "inicio_teste": "2026-10-07",
+                "fim_teste": "2026-10-27",
+                "validacao": "holdout cronológico com previsão recursiva",
+                "wape": 0.1221
+              }
+            },
+            "despesas": {
+              "metodo": "LightGBM Regressor",
+              "avaliacao": {
+                "mae_modelo_centavos": 12668,
+                "mae_referencia_centavos": 207873,
+                "dias_teste": 21,
+                "inicio_teste": "2026-10-07",
+                "fim_teste": "2026-10-27",
+                "validacao": "holdout cronológico com previsão recursiva",
+                "wape": 0.3001
+              }
+            }
+          },
+          "dias_historico": 1095,
+          "ultima_data": "2026-10-27",
+          "origem_previsao": "2026-10-27",
+          "menor_saldo_centavos": 39980713,
+          "saldo_final_centavos": 41622720,
+          "pendentes_sem_tipo": 0,
+          "saldo_atual_centavos": 40119304,
+          "aviso": "Estimativa, não garantia. Dias sem lançamentos no histórico são considerados sem movimentação. Confira se os arquivos cobrem todo o período.",
+          "sintetico": true
+        },
+        "alertas": [
+          {
+            "nivel": "warning",
+            "titulo": "Lançamentos para revisar",
+            "descricao": "12 movimentações aguardam confirmação da categoria ou do tipo.",
+            "quantidade": 12,
+            "destino": "classification"
+          },
+          {
+            "nivel": "info",
+            "titulo": "Despesas concentradas",
+            "descricao": "Pessoal representa 42% das saídas no período.",
+            "valor_centavos": 1008000,
+            "destino": "transactions"
+          }
+        ],
+        "dias_cobertura": 484
+      }
+    },
+    {
+      "empresa": {
+        "id_empresa": 3,
+        "nome": "Horizonte Varejo",
+        "descricao": "Base sintética v2 · horizonte",
+        "saldo_inicial_centavos": 2000000,
+        "data_saldo": "2023-10-29",
+        "demo": 1,
+        "revisao": 1,
+        "created_at": "2026-10-27T23:59:01.208490+00:00",
+        "updated_at": "2026-10-27T23:59:01.255209+00:00"
+      },
+      "modelo": {
+        "disponivel": false,
+        "metodo": "regras",
+        "mensagem": "Modelo ainda não treinado. Sugestões por palavras-chave disponíveis."
+      },
+      "previsao": {
+        "disponivel": true,
+        "dias": 30,
+        "serie": [
+          {
+            "data": "2026-10-28",
+            "receitas_centavos": 90030,
+            "despesas_centavos": 46303,
+            "saldo_centavos": 22134606
+          },
+          {
+            "data": "2026-10-29",
+            "receitas_centavos": 94691,
+            "despesas_centavos": 41458,
+            "saldo_centavos": 22187839
+          },
+          {
+            "data": "2026-10-30",
+            "receitas_centavos": 94219,
+            "despesas_centavos": 45856,
+            "saldo_centavos": 22236202
+          },
+          {
+            "data": "2026-10-31",
+            "receitas_centavos": 51686,
+            "despesas_centavos": 10485,
+            "saldo_centavos": 22277403
+          },
+          {
+            "data": "2026-11-01",
+            "receitas_centavos": 59417,
+            "despesas_centavos": 1991,
+            "saldo_centavos": 22334829
+          },
+          {
+            "data": "2026-11-02",
+            "receitas_centavos": 128371,
+            "despesas_centavos": 58707,
+            "saldo_centavos": 22404493
+          },
+          {
+            "data": "2026-11-03",
+            "receitas_centavos": 127523,
+            "despesas_centavos": 14276,
+            "saldo_centavos": 22517740
+          },
+          {
+            "data": "2026-11-04",
+            "receitas_centavos": 126894,
+            "despesas_centavos": 0,
+            "saldo_centavos": 22644634
+          },
+          {
+            "data": "2026-11-05",
+            "receitas_centavos": 127950,
+            "despesas_centavos": 1033716,
+            "saldo_centavos": 21738868
+          },
+          {
+            "data": "2026-11-06",
+            "receitas_centavos": 132898,
+            "despesas_centavos": 128366,
+            "saldo_centavos": 21743400
+          },
+          {
+            "data": "2026-11-07",
+            "receitas_centavos": 66460,
+            "despesas_centavos": 6049,
+            "saldo_centavos": 21803811
+          },
+          {
+            "data": "2026-11-08",
+            "receitas_centavos": 68175,
+            "despesas_centavos": 6049,
+            "saldo_centavos": 21865937
+          },
+          {
+            "data": "2026-11-09",
+            "receitas_centavos": 132259,
+            "despesas_centavos": 42675,
+            "saldo_centavos": 21955521
+          },
+          {
+            "data": "2026-11-10",
+            "receitas_centavos": 132692,
+            "despesas_centavos": 28722,
+            "saldo_centavos": 22059491
+          },
+          {
+            "data": "2026-11-11",
+            "receitas_centavos": 131221,
+            "despesas_centavos": 36105,
+            "saldo_centavos": 22154607
+          },
+          {
+            "data": "2026-11-12",
+            "receitas_centavos": 131841,
+            "despesas_centavos": 42675,
+            "saldo_centavos": 22243773
+          },
+          {
+            "data": "2026-11-13",
+            "receitas_centavos": 132383,
+            "despesas_centavos": 59689,
+            "saldo_centavos": 22316467
+          },
+          {
+            "data": "2026-11-14",
+            "receitas_centavos": 65647,
+            "despesas_centavos": 10371,
+            "saldo_centavos": 22371743
+          },
+          {
+            "data": "2026-11-15",
+            "receitas_centavos": 66742,
+            "despesas_centavos": 11058,
+            "saldo_centavos": 22427427
+          },
+          {
+            "data": "2026-11-16",
+            "receitas_centavos": 125813,
+            "despesas_centavos": 42598,
+            "saldo_centavos": 22510642
+          },
+          {
+            "data": "2026-11-17",
+            "receitas_centavos": 126394,
+            "despesas_centavos": 30013,
+            "saldo_centavos": 22607023
+          },
+          {
+            "data": "2026-11-18",
+            "receitas_centavos": 124933,
+            "despesas_centavos": 64929,
+            "saldo_centavos": 22667027
+          },
+          {
+            "data": "2026-11-19",
+            "receitas_centavos": 126081,
+            "despesas_centavos": 45276,
+            "saldo_centavos": 22747832
+          },
+          {
+            "data": "2026-11-20",
+            "receitas_centavos": 126081,
+            "despesas_centavos": 119617,
+            "saldo_centavos": 22754296
+          },
+          {
+            "data": "2026-11-21",
+            "receitas_centavos": 68983,
+            "despesas_centavos": 6163,
+            "saldo_centavos": 22817116
+          },
+          {
+            "data": "2026-11-22",
+            "receitas_centavos": 71775,
+            "despesas_centavos": 6163,
+            "saldo_centavos": 22882728
+          },
+          {
+            "data": "2026-11-23",
+            "receitas_centavos": 127614,
+            "despesas_centavos": 41535,
+            "saldo_centavos": 22968807
+          },
+          {
+            "data": "2026-11-24",
+            "receitas_centavos": 127181,
+            "despesas_centavos": 30881,
+            "saldo_centavos": 23065107
+          },
+          {
+            "data": "2026-11-25",
+            "receitas_centavos": 129563,
+            "despesas_centavos": 41982,
+            "saldo_centavos": 23152688
+          },
+          {
+            "data": "2026-11-26",
+            "receitas_centavos": 126779,
+            "despesas_centavos": 45856,
+            "saldo_centavos": 23233611
+          }
+        ],
+        "metodo": "LightGBM Regressor",
+        "modelos": {
+          "receitas": {
+            "metodo": "LightGBM Regressor",
+            "avaliacao": {
+              "mae_modelo_centavos": 7116,
+              "mae_referencia_centavos": 13054,
+              "dias_teste": 21,
+              "inicio_teste": "2026-10-07",
+              "fim_teste": "2026-10-27",
+              "validacao": "holdout cronológico com previsão recursiva",
+              "wape": 0.093
+            }
+          },
+          "despesas": {
+            "metodo": "LightGBM Regressor",
+            "avaliacao": {
+              "mae_modelo_centavos": 12504,
+              "mae_referencia_centavos": 179711,
+              "dias_teste": 21,
+              "inicio_teste": "2026-10-07",
+              "fim_teste": "2026-10-27",
+              "validacao": "holdout cronológico com previsão recursiva",
+              "wape": 0.3491
+            }
+          }
+        },
+        "dias_historico": 1095,
+        "ultima_data": "2026-10-27",
+        "origem_previsao": "2026-10-27",
+        "menor_saldo_centavos": 21738868,
+        "saldo_final_centavos": 23233611,
+        "pendentes_sem_tipo": 0,
+        "saldo_atual_centavos": 22090879,
+        "aviso": "Estimativa, não garantia. Dias sem lançamentos no histórico são considerados sem movimentação. Confira se os arquivos cobrem todo o período.",
+        "sintetico": true
+      },
+      "resumo": {
+        "empresa": {
+          "id_empresa": 3,
+          "nome": "Horizonte Varejo",
+          "descricao": "Base sintética v2 · horizonte",
+          "saldo_inicial_centavos": 2000000,
+          "data_saldo": "2023-10-29",
+          "demo": 1,
+          "revisao": 1,
+          "created_at": "2026-10-27T23:59:01.208490+00:00",
+          "updated_at": "2026-10-27T23:59:01.255209+00:00"
+        },
+        "periodo": {
+          "codigo": "month",
+          "inicio": "2026-10-01",
+          "fim": "2026-10-27"
+        },
+        "saldo_centavos": 22090879,
+        "receitas_centavos": 2056534,
+        "despesas_centavos": 2059153,
+        "resultado_centavos": -2619,
+        "variacao_receitas": 2.0,
+        "variacao_despesas": -2.3,
+        "pendentes": 13,
+        "sem_tipo": 0,
+        "total_lancamentos": 4125,
+        "lancamentos_periodo": 100,
+        "categorias": [
+          {
+            "categoria": "Pessoal",
+            "valor_centavos": 887040,
+            "percentual": 43.1
+          },
+          {
+            "categoria": "Fornecedores",
+            "valor_centavos": 308492,
+            "percentual": 15.0
+          },
+          {
+            "categoria": "Aluguel",
+            "valor_centavos": 281600,
+            "percentual": 13.7
+          },
+          {
+            "categoria": "Sem categoria",
+            "valor_centavos": 250395,
+            "percentual": 12.2
+          },
+          {
+            "categoria": "Impostos",
+            "valor_centavos": 146174,
+            "percentual": 7.1
+          },
+          {
+            "categoria": "Marketing",
+            "valor_centavos": 68231,
+            "percentual": 3.3
+          },
+          {
+            "categoria": "Logística",
+            "valor_centavos": 67788,
+            "percentual": 3.3
+          },
+          {
+            "categoria": "Alimentação",
+            "valor_centavos": 49433,
+            "percentual": 2.4
+          }
+        ],
+        "saldo_abertura_grafico_centavos": 22093498,
+        "qualidade": {
+          "revisados": 4112,
+          "pendentes": 13,
+          "sem_tipo_centavos": 0,
+          "ultima_movimentacao": "2026-10-27"
+        },
+        "fluxo_mensal": [
+          {
+            "mes": "2026-05",
+            "receitas_centavos": 3152864,
+            "despesas_centavos": 2157778
+          },
+          {
+            "mes": "2026-06",
+            "receitas_centavos": 2975931,
+            "despesas_centavos": 2219850
+          },
+          {
+            "mes": "2026-07",
+            "receitas_centavos": 2316647,
+            "despesas_centavos": 2140562
+          },
+          {
+            "mes": "2026-08",
+            "receitas_centavos": 2384331,
+            "despesas_centavos": 10689107
+          },
+          {
+            "mes": "2026-09",
+            "receitas_centavos": 2308419,
+            "despesas_centavos": 2199282
+          },
+          {
+            "mes": "2026-10",
+            "receitas_centavos": 2056534,
+            "despesas_centavos": 2059153
+          }
+        ],
+        "ultimos": [
+          {
+            "id_lancamento": 9027,
+            "id_empresa": 3,
+            "id_planilha": null,
+            "linha_origem": null,
+            "descricao": "Campanha de marketing digital",
+            "categoria": "Sem categoria",
+            "valor_centavos": 29993,
+            "data": "2026-10-27",
+            "tipo": 2,
+            "revisado": 0,
+            "origem": "demonstracao",
+            "sugestao": null,
+            "created_at": "2026-10-27T23:59:01.224018+00:00",
+            "updated_at": "2026-10-27T23:59:01.224018+00:00",
+            "documento": "DOC-HORIZONTE-004125",
+            "contraparte": "Agência Modelo",
+            "centro_custo": "Comercial",
+            "conta": "Conta principal",
+            "forma_pagamento": "Boleto",
+            "competencia": "2026-10",
+            "observacoes": "Registro fictício para treinamento e demonstração",
+            "id_externo": "SYN-HORIZONTE-004125"
+          },
+          {
+            "id_lancamento": 9026,
+            "id_empresa": 3,
+            "id_planilha": null,
+            "linha_origem": null,
+            "descricao": "Serviço de manutenção pedido 5378",
+            "categoria": "Serviços",
+            "valor_centavos": 35512,
+            "data": "2026-10-27",
+            "tipo": 1,
+            "revisado": 1,
+            "origem": "demonstracao",
+            "sugestao": null,
+            "created_at": "2026-10-27T23:59:01.224018+00:00",
+            "updated_at": "2026-10-27T23:59:01.224018+00:00",
+            "documento": "DOC-HORIZONTE-004124",
+            "contraparte": "Cliente Modelo 173",
+            "centro_custo": "Atendimento",
+            "conta": "Caixa da loja",
+            "forma_pagamento": "PIX",
+            "competencia": "2026-10",
+            "observacoes": "Registro fictício para treinamento e demonstração",
+            "id_externo": "SYN-HORIZONTE-004124"
+          },
+          {
+            "id_lancamento": 9025,
+            "id_empresa": 3,
+            "id_planilha": null,
+            "linha_origem": null,
+            "descricao": "Venda de produtos pedido 5377",
+            "categoria": "Vendas",
+            "valor_centavos": 26278,
+            "data": "2026-10-27",
+            "tipo": 1,
+            "revisado": 1,
+            "origem": "demonstracao",
+            "sugestao": null,
+            "created_at": "2026-10-27T23:59:01.224018+00:00",
+            "updated_at": "2026-10-27T23:59:01.224018+00:00",
+            "documento": "DOC-HORIZONTE-004123",
+            "contraparte": "Cliente Modelo 001",
+            "centro_custo": "Loja",
+            "conta": "Conta principal",
+            "forma_pagamento": "PIX",
+            "competencia": "2026-10",
+            "observacoes": "Registro fictício para treinamento e demonstração",
+            "id_externo": "SYN-HORIZONTE-004123"
+          },
+          {
+            "id_lancamento": 9024,
+            "id_empresa": 3,
+            "id_planilha": null,
+            "linha_origem": null,
+            "descricao": "Venda de produtos pedido 5376",
+            "categoria": "Vendas",
+            "valor_centavos": 28231,
+            "data": "2026-10-27",
+            "tipo": 1,
+            "revisado": 1,
+            "origem": "demonstracao",
+            "sugestao": null,
+            "created_at": "2026-10-27T23:59:01.224018+00:00",
+            "updated_at": "2026-10-27T23:59:01.224018+00:00",
+            "documento": "DOC-HORIZONTE-004122",
+            "contraparte": "Cliente Modelo 156",
+            "centro_custo": "Loja",
+            "conta": "Conta principal",
+            "forma_pagamento": "PIX",
+            "competencia": "2026-10",
+            "observacoes": "Registro fictício para treinamento e demonstração",
+            "id_externo": "SYN-HORIZONTE-004122"
+          },
+          {
+            "id_lancamento": 9023,
+            "id_empresa": 3,
+            "id_planilha": null,
+            "linha_origem": null,
+            "descricao": "Pagamento fornecedor de insumos",
+            "categoria": "Sem categoria",
+            "valor_centavos": 48466,
+            "data": "2026-10-26",
+            "tipo": 2,
+            "revisado": 0,
+            "origem": "demonstracao",
+            "sugestao": null,
+            "created_at": "2026-10-27T23:59:01.224018+00:00",
+            "updated_at": "2026-10-27T23:59:01.224018+00:00",
+            "documento": "DOC-HORIZONTE-004121",
+            "contraparte": "Distribuidora Fictícia 09",
+            "centro_custo": "Operação",
+            "conta": "Conta principal",
+            "forma_pagamento": "PIX",
+            "competencia": "2026-10",
+            "observacoes": "Registro fictício para treinamento e demonstração",
+            "id_externo": "SYN-HORIZONTE-004121"
+          }
+        ],
+        "previsao": {
+          "disponivel": true,
+          "dias": 30,
+          "serie": [
+            {
+              "data": "2026-10-28",
+              "receitas_centavos": 90030,
+              "despesas_centavos": 46303,
+              "saldo_centavos": 22134606
+            },
+            {
+              "data": "2026-10-29",
+              "receitas_centavos": 94691,
+              "despesas_centavos": 41458,
+              "saldo_centavos": 22187839
+            },
+            {
+              "data": "2026-10-30",
+              "receitas_centavos": 94219,
+              "despesas_centavos": 45856,
+              "saldo_centavos": 22236202
+            },
+            {
+              "data": "2026-10-31",
+              "receitas_centavos": 51686,
+              "despesas_centavos": 10485,
+              "saldo_centavos": 22277403
+            },
+            {
+              "data": "2026-11-01",
+              "receitas_centavos": 59417,
+              "despesas_centavos": 1991,
+              "saldo_centavos": 22334829
+            },
+            {
+              "data": "2026-11-02",
+              "receitas_centavos": 128371,
+              "despesas_centavos": 58707,
+              "saldo_centavos": 22404493
+            },
+            {
+              "data": "2026-11-03",
+              "receitas_centavos": 127523,
+              "despesas_centavos": 14276,
+              "saldo_centavos": 22517740
+            },
+            {
+              "data": "2026-11-04",
+              "receitas_centavos": 126894,
+              "despesas_centavos": 0,
+              "saldo_centavos": 22644634
+            },
+            {
+              "data": "2026-11-05",
+              "receitas_centavos": 127950,
+              "despesas_centavos": 1033716,
+              "saldo_centavos": 21738868
+            },
+            {
+              "data": "2026-11-06",
+              "receitas_centavos": 132898,
+              "despesas_centavos": 128366,
+              "saldo_centavos": 21743400
+            },
+            {
+              "data": "2026-11-07",
+              "receitas_centavos": 66460,
+              "despesas_centavos": 6049,
+              "saldo_centavos": 21803811
+            },
+            {
+              "data": "2026-11-08",
+              "receitas_centavos": 68175,
+              "despesas_centavos": 6049,
+              "saldo_centavos": 21865937
+            },
+            {
+              "data": "2026-11-09",
+              "receitas_centavos": 132259,
+              "despesas_centavos": 42675,
+              "saldo_centavos": 21955521
+            },
+            {
+              "data": "2026-11-10",
+              "receitas_centavos": 132692,
+              "despesas_centavos": 28722,
+              "saldo_centavos": 22059491
+            },
+            {
+              "data": "2026-11-11",
+              "receitas_centavos": 131221,
+              "despesas_centavos": 36105,
+              "saldo_centavos": 22154607
+            },
+            {
+              "data": "2026-11-12",
+              "receitas_centavos": 131841,
+              "despesas_centavos": 42675,
+              "saldo_centavos": 22243773
+            },
+            {
+              "data": "2026-11-13",
+              "receitas_centavos": 132383,
+              "despesas_centavos": 59689,
+              "saldo_centavos": 22316467
+            },
+            {
+              "data": "2026-11-14",
+              "receitas_centavos": 65647,
+              "despesas_centavos": 10371,
+              "saldo_centavos": 22371743
+            },
+            {
+              "data": "2026-11-15",
+              "receitas_centavos": 66742,
+              "despesas_centavos": 11058,
+              "saldo_centavos": 22427427
+            },
+            {
+              "data": "2026-11-16",
+              "receitas_centavos": 125813,
+              "despesas_centavos": 42598,
+              "saldo_centavos": 22510642
+            },
+            {
+              "data": "2026-11-17",
+              "receitas_centavos": 126394,
+              "despesas_centavos": 30013,
+              "saldo_centavos": 22607023
+            },
+            {
+              "data": "2026-11-18",
+              "receitas_centavos": 124933,
+              "despesas_centavos": 64929,
+              "saldo_centavos": 22667027
+            },
+            {
+              "data": "2026-11-19",
+              "receitas_centavos": 126081,
+              "despesas_centavos": 45276,
+              "saldo_centavos": 22747832
+            },
+            {
+              "data": "2026-11-20",
+              "receitas_centavos": 126081,
+              "despesas_centavos": 119617,
+              "saldo_centavos": 22754296
+            },
+            {
+              "data": "2026-11-21",
+              "receitas_centavos": 68983,
+              "despesas_centavos": 6163,
+              "saldo_centavos": 22817116
+            },
+            {
+              "data": "2026-11-22",
+              "receitas_centavos": 71775,
+              "despesas_centavos": 6163,
+              "saldo_centavos": 22882728
+            },
+            {
+              "data": "2026-11-23",
+              "receitas_centavos": 127614,
+              "despesas_centavos": 41535,
+              "saldo_centavos": 22968807
+            },
+            {
+              "data": "2026-11-24",
+              "receitas_centavos": 127181,
+              "despesas_centavos": 30881,
+              "saldo_centavos": 23065107
+            },
+            {
+              "data": "2026-11-25",
+              "receitas_centavos": 129563,
+              "despesas_centavos": 41982,
+              "saldo_centavos": 23152688
+            },
+            {
+              "data": "2026-11-26",
+              "receitas_centavos": 126779,
+              "despesas_centavos": 45856,
+              "saldo_centavos": 23233611
+            }
+          ],
+          "metodo": "LightGBM Regressor",
+          "modelos": {
+            "receitas": {
+              "metodo": "LightGBM Regressor",
+              "avaliacao": {
+                "mae_modelo_centavos": 7116,
+                "mae_referencia_centavos": 13054,
+                "dias_teste": 21,
+                "inicio_teste": "2026-10-07",
+                "fim_teste": "2026-10-27",
+                "validacao": "holdout cronológico com previsão recursiva",
+                "wape": 0.093
+              }
+            },
+            "despesas": {
+              "metodo": "LightGBM Regressor",
+              "avaliacao": {
+                "mae_modelo_centavos": 12504,
+                "mae_referencia_centavos": 179711,
+                "dias_teste": 21,
+                "inicio_teste": "2026-10-07",
+                "fim_teste": "2026-10-27",
+                "validacao": "holdout cronológico com previsão recursiva",
+                "wape": 0.3491
+              }
+            }
+          },
+          "dias_historico": 1095,
+          "ultima_data": "2026-10-27",
+          "origem_previsao": "2026-10-27",
+          "menor_saldo_centavos": 21738868,
+          "saldo_final_centavos": 23233611,
+          "pendentes_sem_tipo": 0,
+          "saldo_atual_centavos": 22090879,
+          "aviso": "Estimativa, não garantia. Dias sem lançamentos no histórico são considerados sem movimentação. Confira se os arquivos cobrem todo o período.",
+          "sintetico": true
+        },
+        "alertas": [
+          {
+            "nivel": "warning",
+            "titulo": "Lançamentos para revisar",
+            "descricao": "13 movimentações aguardam confirmação da categoria ou do tipo.",
+            "quantidade": 13,
+            "destino": "classification"
+          },
+          {
+            "nivel": "info",
+            "titulo": "Despesas concentradas",
+            "descricao": "Pessoal representa 43% das saídas no período.",
+            "valor_centavos": 887040,
+            "destino": "transactions"
+          }
+        ],
+        "dias_cobertura": 305
+      }
+    },
+    {
+      "empresa": {
+        "id_empresa": 4,
+        "nome": "Studio Soluções",
+        "descricao": "Base sintética v2 · studio",
+        "saldo_inicial_centavos": 2500000,
+        "data_saldo": "2023-10-30",
+        "demo": 1,
+        "revisao": 1,
+        "created_at": "2026-10-27T23:59:01.323876+00:00",
+        "updated_at": "2026-10-27T23:59:01.361623+00:00"
+      },
+      "modelo": {
+        "disponivel": false,
+        "metodo": "regras",
+        "mensagem": "Modelo ainda não treinado. Sugestões por palavras-chave disponíveis."
+      },
+      "previsao": {
+        "disponivel": true,
+        "dias": 30,
+        "serie": [
+          {
+            "data": "2026-10-28",
+            "receitas_centavos": 139844,
+            "despesas_centavos": 61194,
+            "saldo_centavos": 5249727
+          },
+          {
+            "data": "2026-10-29",
+            "receitas_centavos": 132097,
+            "despesas_centavos": 43506,
+            "saldo_centavos": 5338318
+          },
+          {
+            "data": "2026-10-30",
+            "receitas_centavos": 137342,
+            "despesas_centavos": 57242,
+            "saldo_centavos": 5418418
+          },
+          {
+            "data": "2026-10-31",
+            "receitas_centavos": 0,
+            "despesas_centavos": 9402,
+            "saldo_centavos": 5409016
+          },
+          {
+            "data": "2026-11-01",
+            "receitas_centavos": 0,
+            "despesas_centavos": 0,
+            "saldo_centavos": 5409016
+          },
+          {
+            "data": "2026-11-02",
+            "receitas_centavos": 152774,
+            "despesas_centavos": 0,
+            "saldo_centavos": 5561790
+          },
+          {
+            "data": "2026-11-03",
+            "receitas_centavos": 139113,
+            "despesas_centavos": 27481,
+            "saldo_centavos": 5673422
+          },
+          {
+            "data": "2026-11-04",
+            "receitas_centavos": 139844,
+            "despesas_centavos": 52362,
+            "saldo_centavos": 5760904
+          },
+          {
+            "data": "2026-11-05",
+            "receitas_centavos": 132097,
+            "despesas_centavos": 1658491,
+            "saldo_centavos": 4234510
+          },
+          {
+            "data": "2026-11-06",
+            "receitas_centavos": 137342,
+            "despesas_centavos": 56121,
+            "saldo_centavos": 4315731
+          },
+          {
+            "data": "2026-11-07",
+            "receitas_centavos": 0,
+            "despesas_centavos": 2627,
+            "saldo_centavos": 4313104
+          },
+          {
+            "data": "2026-11-08",
+            "receitas_centavos": 0,
+            "despesas_centavos": 2627,
+            "saldo_centavos": 4310477
+          },
+          {
+            "data": "2026-11-09",
+            "receitas_centavos": 152774,
+            "despesas_centavos": 45230,
+            "saldo_centavos": 4418021
+          },
+          {
+            "data": "2026-11-10",
+            "receitas_centavos": 139113,
+            "despesas_centavos": 24740,
+            "saldo_centavos": 4532394
+          },
+          {
+            "data": "2026-11-11",
+            "receitas_centavos": 139844,
+            "despesas_centavos": 49766,
+            "saldo_centavos": 4622472
+          },
+          {
+            "data": "2026-11-12",
+            "receitas_centavos": 132097,
+            "despesas_centavos": 48942,
+            "saldo_centavos": 4705627
+          },
+          {
+            "data": "2026-11-13",
+            "receitas_centavos": 137342,
+            "despesas_centavos": 56636,
+            "saldo_centavos": 4786333
+          },
+          {
+            "data": "2026-11-14",
+            "receitas_centavos": 0,
+            "despesas_centavos": 8534,
+            "saldo_centavos": 4777799
+          },
+          {
+            "data": "2026-11-15",
+            "receitas_centavos": 0,
+            "despesas_centavos": 18836,
+            "saldo_centavos": 4758963
+          },
+          {
+            "data": "2026-11-16",
+            "receitas_centavos": 152774,
+            "despesas_centavos": 46218,
+            "saldo_centavos": 4865519
+          },
+          {
+            "data": "2026-11-17",
+            "receitas_centavos": 139113,
+            "despesas_centavos": 74536,
+            "saldo_centavos": 4930096
+          },
+          {
+            "data": "2026-11-18",
+            "receitas_centavos": 139844,
+            "despesas_centavos": 49112,
+            "saldo_centavos": 5020828
+          },
+          {
+            "data": "2026-11-19",
+            "receitas_centavos": 132097,
+            "despesas_centavos": 31941,
+            "saldo_centavos": 5120984
+          },
+          {
+            "data": "2026-11-20",
+            "receitas_centavos": 137342,
+            "despesas_centavos": 111386,
+            "saldo_centavos": 5146940
+          },
+          {
+            "data": "2026-11-21",
+            "receitas_centavos": 0,
+            "despesas_centavos": 4784,
+            "saldo_centavos": 5142156
+          },
+          {
+            "data": "2026-11-22",
+            "receitas_centavos": 0,
+            "despesas_centavos": 4784,
+            "saldo_centavos": 5137372
+          },
+          {
+            "data": "2026-11-23",
+            "receitas_centavos": 152774,
+            "despesas_centavos": 55710,
+            "saldo_centavos": 5234436
+          },
+          {
+            "data": "2026-11-24",
+            "receitas_centavos": 139113,
+            "despesas_centavos": 30727,
+            "saldo_centavos": 5342822
+          },
+          {
+            "data": "2026-11-25",
+            "receitas_centavos": 139844,
+            "despesas_centavos": 54886,
+            "saldo_centavos": 5427780
+          },
+          {
+            "data": "2026-11-26",
+            "receitas_centavos": 132097,
+            "despesas_centavos": 54886,
+            "saldo_centavos": 5504991
+          }
+        ],
+        "metodo": "LightGBM Regressor + Referência sazonal (7 dias)",
+        "modelos": {
+          "receitas": {
+            "metodo": "Referência sazonal (7 dias)",
+            "avaliacao": {
+              "mae_modelo_centavos": 8643,
+              "mae_referencia_centavos": 8642,
+              "dias_teste": 21,
+              "inicio_teste": "2026-10-07",
+              "fim_teste": "2026-10-27",
+              "validacao": "holdout cronológico com previsão recursiva",
+              "wape": 0.0869
+            }
+          },
+          "despesas": {
+            "metodo": "LightGBM Regressor",
+            "avaliacao": {
+              "mae_modelo_centavos": 15167,
+              "mae_referencia_centavos": 239039,
+              "dias_teste": 21,
+              "inicio_teste": "2026-10-07",
+              "fim_teste": "2026-10-27",
+              "validacao": "holdout cronológico com previsão recursiva",
+              "wape": 0.307
+            }
+          }
+        },
+        "dias_historico": 1094,
+        "ultima_data": "2026-10-27",
+        "origem_previsao": "2026-10-27",
+        "menor_saldo_centavos": 4234510,
+        "saldo_final_centavos": 5504991,
+        "pendentes_sem_tipo": 0,
+        "saldo_atual_centavos": 5171077,
+        "aviso": "Estimativa, não garantia. Dias sem lançamentos no histórico são considerados sem movimentação. Confira se os arquivos cobrem todo o período.",
+        "sintetico": true
+      },
+      "resumo": {
+        "empresa": {
+          "id_empresa": 4,
+          "nome": "Studio Soluções",
+          "descricao": "Base sintética v2 · studio",
+          "saldo_inicial_centavos": 2500000,
+          "data_saldo": "2023-10-30",
+          "demo": 1,
+          "revisao": 1,
+          "created_at": "2026-10-27T23:59:01.323876+00:00",
+          "updated_at": "2026-10-27T23:59:01.361623+00:00"
+        },
+        "periodo": {
+          "codigo": "month",
+          "inicio": "2026-10-01",
+          "fim": "2026-10-27"
+        },
+        "saldo_centavos": 5171077,
+        "receitas_centavos": 2629705,
+        "despesas_centavos": 2716186,
+        "resultado_centavos": -86481,
+        "variacao_receitas": -1.5,
+        "variacao_despesas": 1.7,
+        "pendentes": 12,
+        "sem_tipo": 0,
+        "total_lancamentos": 2716,
+        "lancamentos_periodo": 65,
+        "categorias": [
+          {
+            "categoria": "Pessoal",
+            "valor_centavos": 1159200,
+            "percentual": 42.7
+          },
+          {
+            "categoria": "Fornecedores",
+            "valor_centavos": 405362,
+            "percentual": 14.9
+          },
+          {
+            "categoria": "Aluguel",
+            "valor_centavos": 368000,
+            "percentual": 13.5
+          },
+          {
+            "categoria": "Impostos",
+            "valor_centavos": 265310,
+            "percentual": 9.8
+          },
+          {
+            "categoria": "Sem categoria",
+            "valor_centavos": 252777,
+            "percentual": 9.3
+          },
+          {
+            "categoria": "Marketing",
+            "valor_centavos": 93169,
+            "percentual": 3.4
+          },
+          {
+            "categoria": "Utilidades",
+            "valor_centavos": 80009,
+            "percentual": 2.9
+          },
+          {
+            "categoria": "Logística",
+            "valor_centavos": 50187,
+            "percentual": 1.8
+          },
+          {
+            "categoria": "Alimentação",
+            "valor_centavos": 42172,
+            "percentual": 1.6
+          }
+        ],
+        "saldo_abertura_grafico_centavos": 5257558,
+        "qualidade": {
+          "revisados": 2704,
+          "pendentes": 12,
+          "sem_tipo_centavos": 0,
+          "ultima_movimentacao": "2026-10-27"
+        },
+        "fluxo_mensal": [
+          {
+            "mes": "2026-05",
+            "receitas_centavos": 2698375,
+            "despesas_centavos": 2748330
+          },
+          {
+            "mes": "2026-06",
+            "receitas_centavos": 2857164,
+            "despesas_centavos": 2832444
+          },
+          {
+            "mes": "2026-07",
+            "receitas_centavos": 3184834,
+            "despesas_centavos": 2858217
+          },
+          {
+            "mes": "2026-08",
+            "receitas_centavos": 2922473,
+            "despesas_centavos": 2743989
+          },
+          {
+            "mes": "2026-09",
+            "receitas_centavos": 3105572,
+            "despesas_centavos": 2782710
+          },
+          {
+            "mes": "2026-10",
+            "receitas_centavos": 2629705,
+            "despesas_centavos": 2716186
+          }
+        ],
+        "ultimos": [
+          {
+            "id_lancamento": 11743,
+            "id_empresa": 4,
+            "id_planilha": null,
+            "linha_origem": null,
+            "descricao": "Campanha de marketing digital",
+            "categoria": "Marketing",
+            "valor_centavos": 21599,
+            "data": "2026-10-27",
+            "tipo": 2,
+            "revisado": 1,
+            "origem": "demonstracao",
+            "sugestao": null,
+            "created_at": "2026-10-27T23:59:01.338801+00:00",
+            "updated_at": "2026-10-27T23:59:01.338801+00:00",
+            "documento": "DOC-STUDIO-002716",
+            "contraparte": "Agência Modelo",
+            "centro_custo": "Comercial",
+            "conta": "Caixa da loja",
+            "forma_pagamento": "Transferência",
+            "competencia": "2026-10",
+            "observacoes": "Registro fictício para treinamento e demonstração",
+            "id_externo": "SYN-STUDIO-002716"
+          },
+          {
+            "id_lancamento": 11742,
+            "id_empresa": 4,
+            "id_planilha": null,
+            "linha_origem": null,
+            "descricao": "Serviço de manutenção pedido 5377",
+            "categoria": "Serviços",
+            "valor_centavos": 82122,
+            "data": "2026-10-27",
+            "tipo": 1,
+            "revisado": 1,
+            "origem": "demonstracao",
+            "sugestao": null,
+            "created_at": "2026-10-27T23:59:01.338801+00:00",
+            "updated_at": "2026-10-27T23:59:01.338801+00:00",
+            "documento": "DOC-STUDIO-002715",
+            "contraparte": "Cliente Modelo 047",
+            "centro_custo": "Atendimento",
+            "conta": "Conta principal",
+            "forma_pagamento": "Transferência",
+            "competencia": "2026-10",
+            "observacoes": "Registro fictício para treinamento e demonstração",
+            "id_externo": "SYN-STUDIO-002715"
+          },
+          {
+            "id_lancamento": 11741,
+            "id_empresa": 4,
+            "id_planilha": null,
+            "linha_origem": null,
+            "descricao": "Serviço de manutenção pedido 5376",
+            "categoria": "Serviços",
+            "valor_centavos": 56991,
+            "data": "2026-10-27",
+            "tipo": 1,
+            "revisado": 1,
+            "origem": "demonstracao",
+            "sugestao": null,
+            "created_at": "2026-10-27T23:59:01.338801+00:00",
+            "updated_at": "2026-10-27T23:59:01.338801+00:00",
+            "documento": "DOC-STUDIO-002714",
+            "contraparte": "Cliente Modelo 160",
+            "centro_custo": "Atendimento",
+            "conta": "Conta principal",
+            "forma_pagamento": "Transferência",
+            "competencia": "2026-10",
+            "observacoes": "Registro fictício para treinamento e demonstração",
+            "id_externo": "SYN-STUDIO-002714"
+          },
+          {
+            "id_lancamento": 11740,
+            "id_empresa": 4,
+            "id_planilha": null,
+            "linha_origem": null,
+            "descricao": "Pagamento fornecedor de insumos",
+            "categoria": "Sem categoria",
+            "valor_centavos": 61545,
+            "data": "2026-10-26",
+            "tipo": 2,
+            "revisado": 0,
+            "origem": "demonstracao",
+            "sugestao": null,
+            "created_at": "2026-10-27T23:59:01.338801+00:00",
+            "updated_at": "2026-10-27T23:59:01.338801+00:00",
+            "documento": "DOC-STUDIO-002713",
+            "contraparte": "Distribuidora Fictícia 23",
+            "centro_custo": "Operação",
+            "conta": "Conta principal",
+            "forma_pagamento": "Cartão",
+            "competencia": "2026-10",
+            "observacoes": "Registro fictício para treinamento e demonstração",
+            "id_externo": "SYN-STUDIO-002713"
+          },
+          {
+            "id_lancamento": 11739,
+            "id_empresa": 4,
+            "id_planilha": null,
+            "linha_origem": null,
+            "descricao": "Serviço de manutenção pedido 5373",
+            "categoria": "Serviços",
+            "valor_centavos": 74748,
+            "data": "2026-10-26",
+            "tipo": 1,
+            "revisado": 1,
+            "origem": "demonstracao",
+            "sugestao": null,
+            "created_at": "2026-10-27T23:59:01.338801+00:00",
+            "updated_at": "2026-10-27T23:59:01.338801+00:00",
+            "documento": "DOC-STUDIO-002712",
+            "contraparte": "Cliente Modelo 051",
+            "centro_custo": "Atendimento",
+            "conta": "Caixa da loja",
+            "forma_pagamento": "Boleto",
+            "competencia": "2026-10",
+            "observacoes": "Registro fictício para treinamento e demonstração",
+            "id_externo": "SYN-STUDIO-002712"
+          }
+        ],
+        "previsao": {
+          "disponivel": true,
+          "dias": 30,
+          "serie": [
+            {
+              "data": "2026-10-28",
+              "receitas_centavos": 139844,
+              "despesas_centavos": 61194,
+              "saldo_centavos": 5249727
+            },
+            {
+              "data": "2026-10-29",
+              "receitas_centavos": 132097,
+              "despesas_centavos": 43506,
+              "saldo_centavos": 5338318
+            },
+            {
+              "data": "2026-10-30",
+              "receitas_centavos": 137342,
+              "despesas_centavos": 57242,
+              "saldo_centavos": 5418418
+            },
+            {
+              "data": "2026-10-31",
+              "receitas_centavos": 0,
+              "despesas_centavos": 9402,
+              "saldo_centavos": 5409016
+            },
+            {
+              "data": "2026-11-01",
+              "receitas_centavos": 0,
+              "despesas_centavos": 0,
+              "saldo_centavos": 5409016
+            },
+            {
+              "data": "2026-11-02",
+              "receitas_centavos": 152774,
+              "despesas_centavos": 0,
+              "saldo_centavos": 5561790
+            },
+            {
+              "data": "2026-11-03",
+              "receitas_centavos": 139113,
+              "despesas_centavos": 27481,
+              "saldo_centavos": 5673422
+            },
+            {
+              "data": "2026-11-04",
+              "receitas_centavos": 139844,
+              "despesas_centavos": 52362,
+              "saldo_centavos": 5760904
+            },
+            {
+              "data": "2026-11-05",
+              "receitas_centavos": 132097,
+              "despesas_centavos": 1658491,
+              "saldo_centavos": 4234510
+            },
+            {
+              "data": "2026-11-06",
+              "receitas_centavos": 137342,
+              "despesas_centavos": 56121,
+              "saldo_centavos": 4315731
+            },
+            {
+              "data": "2026-11-07",
+              "receitas_centavos": 0,
+              "despesas_centavos": 2627,
+              "saldo_centavos": 4313104
+            },
+            {
+              "data": "2026-11-08",
+              "receitas_centavos": 0,
+              "despesas_centavos": 2627,
+              "saldo_centavos": 4310477
+            },
+            {
+              "data": "2026-11-09",
+              "receitas_centavos": 152774,
+              "despesas_centavos": 45230,
+              "saldo_centavos": 4418021
+            },
+            {
+              "data": "2026-11-10",
+              "receitas_centavos": 139113,
+              "despesas_centavos": 24740,
+              "saldo_centavos": 4532394
+            },
+            {
+              "data": "2026-11-11",
+              "receitas_centavos": 139844,
+              "despesas_centavos": 49766,
+              "saldo_centavos": 4622472
+            },
+            {
+              "data": "2026-11-12",
+              "receitas_centavos": 132097,
+              "despesas_centavos": 48942,
+              "saldo_centavos": 4705627
+            },
+            {
+              "data": "2026-11-13",
+              "receitas_centavos": 137342,
+              "despesas_centavos": 56636,
+              "saldo_centavos": 4786333
+            },
+            {
+              "data": "2026-11-14",
+              "receitas_centavos": 0,
+              "despesas_centavos": 8534,
+              "saldo_centavos": 4777799
+            },
+            {
+              "data": "2026-11-15",
+              "receitas_centavos": 0,
+              "despesas_centavos": 18836,
+              "saldo_centavos": 4758963
+            },
+            {
+              "data": "2026-11-16",
+              "receitas_centavos": 152774,
+              "despesas_centavos": 46218,
+              "saldo_centavos": 4865519
+            },
+            {
+              "data": "2026-11-17",
+              "receitas_centavos": 139113,
+              "despesas_centavos": 74536,
+              "saldo_centavos": 4930096
+            },
+            {
+              "data": "2026-11-18",
+              "receitas_centavos": 139844,
+              "despesas_centavos": 49112,
+              "saldo_centavos": 5020828
+            },
+            {
+              "data": "2026-11-19",
+              "receitas_centavos": 132097,
+              "despesas_centavos": 31941,
+              "saldo_centavos": 5120984
+            },
+            {
+              "data": "2026-11-20",
+              "receitas_centavos": 137342,
+              "despesas_centavos": 111386,
+              "saldo_centavos": 5146940
+            },
+            {
+              "data": "2026-11-21",
+              "receitas_centavos": 0,
+              "despesas_centavos": 4784,
+              "saldo_centavos": 5142156
+            },
+            {
+              "data": "2026-11-22",
+              "receitas_centavos": 0,
+              "despesas_centavos": 4784,
+              "saldo_centavos": 5137372
+            },
+            {
+              "data": "2026-11-23",
+              "receitas_centavos": 152774,
+              "despesas_centavos": 55710,
+              "saldo_centavos": 5234436
+            },
+            {
+              "data": "2026-11-24",
+              "receitas_centavos": 139113,
+              "despesas_centavos": 30727,
+              "saldo_centavos": 5342822
+            },
+            {
+              "data": "2026-11-25",
+              "receitas_centavos": 139844,
+              "despesas_centavos": 54886,
+              "saldo_centavos": 5427780
+            },
+            {
+              "data": "2026-11-26",
+              "receitas_centavos": 132097,
+              "despesas_centavos": 54886,
+              "saldo_centavos": 5504991
+            }
+          ],
+          "metodo": "LightGBM Regressor + Referência sazonal (7 dias)",
+          "modelos": {
+            "receitas": {
+              "metodo": "Referência sazonal (7 dias)",
+              "avaliacao": {
+                "mae_modelo_centavos": 8643,
+                "mae_referencia_centavos": 8642,
+                "dias_teste": 21,
+                "inicio_teste": "2026-10-07",
+                "fim_teste": "2026-10-27",
+                "validacao": "holdout cronológico com previsão recursiva",
+                "wape": 0.0869
+              }
+            },
+            "despesas": {
+              "metodo": "LightGBM Regressor",
+              "avaliacao": {
+                "mae_modelo_centavos": 15167,
+                "mae_referencia_centavos": 239039,
+                "dias_teste": 21,
+                "inicio_teste": "2026-10-07",
+                "fim_teste": "2026-10-27",
+                "validacao": "holdout cronológico com previsão recursiva",
+                "wape": 0.307
+              }
+            }
+          },
+          "dias_historico": 1094,
+          "ultima_data": "2026-10-27",
+          "origem_previsao": "2026-10-27",
+          "menor_saldo_centavos": 4234510,
+          "saldo_final_centavos": 5504991,
+          "pendentes_sem_tipo": 0,
+          "saldo_atual_centavos": 5171077,
+          "aviso": "Estimativa, não garantia. Dias sem lançamentos no histórico são considerados sem movimentação. Confira se os arquivos cobrem todo o período.",
+          "sintetico": true
+        },
+        "alertas": [
+          {
+            "nivel": "warning",
+            "titulo": "Lançamentos para revisar",
+            "descricao": "12 movimentações aguardam confirmação da categoria ou do tipo.",
+            "quantidade": 12,
+            "destino": "classification"
+          },
+          {
+            "nivel": "info",
+            "titulo": "Despesas concentradas",
+            "descricao": "Pessoal representa 43% das saídas no período.",
+            "valor_centavos": 1159200,
+            "destino": "transactions"
+          }
+        ],
+        "dias_cobertura": 54
+      }
+    }
+  ],
+  "preservacao": {
+    "contagens_anteriores": {
+      "1": 778,
+      "2": 4124,
+      "3": 4125,
+      "4": 2716
+    },
+    "verificado": true
+  }
+}
